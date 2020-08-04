@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "AGAA,OAAO,CAAC,+KAAI;AECZ,AAEI,WAFO,CAEP,KAAK,CAAA;EACF,KAAK,EAAE,KAAK;CAId;;AAPL,AAIQ,WAJG,CAEP,KAAK,CAED,KAAK,CAAA;EACD,KAAK,EAAE,GAAG;CACb",
+    "sources": [
+        "style.scss",
+        "shared/_variables.scss",
+        "shared/_mixings.scss",
+        "shared/_fonts.scss",
+        "components/_footer.scss",
+        "components/_header.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
