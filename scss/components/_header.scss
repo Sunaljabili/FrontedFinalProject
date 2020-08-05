@@ -12,12 +12,12 @@
         margin: 0 auto;
 
         .icons{
-        
+        margin-top: 8px;
              .fas{
                  margin-left: 18px;
-                //  padding: 5px;
                  color: #1b2024;
-                 font-size: 19px;
+                 font-size: 15px;
+                //  margin-bottom: 5px;
              }
              .fa-search{
                  &:hover
@@ -34,7 +34,7 @@
                  border-radius: 50%;
                  font-size: 12px;
                 position: absolute;
-                top: 0px;
+                top: 5px;
              }
 
              .text{
@@ -51,11 +51,11 @@
             font-size: 12px;
             color:rgb(0, 0, 0);
             font-weight: 500;
-            text-transform: uppercase;
             letter-spacing: 1px;
             line-height: 22px;
             .nav-link{
-                padding: 0px;
+                padding:10px 0px;
+                text-transform: uppercase;
                 color: $head-color;
                 position: relative;
             &::before{
@@ -72,7 +72,64 @@
             }
             }
         }
+        .dropdown-menu{
+            border-radius: 0px;
+            left: -60%;
+            top:105%;
+            padding: 10px 15px;
+           
+            .port{
+              
+
+                .portfolioss{
+                    position: absolute;
+                top: 40px;
+                left: 150px;
+                }
+            }
+            
+            
+    .shop{
+    width: 580px;
+    height: 300px;
+    text-align: center;
+    // margin-right:400px;
+    .item{
+        margin-left: 10px;
+        font-family: "Playfair Display",serif;
+        font-size: 22px;
+        text-transform: none;
+        line-height: 1.1em;
+        color: #1b1b1b;
+        min-width: 160px;
+        max-width: 160px;
+        text-align: left;
+        
+        h5{
+            margin-right: 10px;
+        }
+        ul{
+            list-style: none;
+            li{
+                text-align: left;
+                margin-right: 20px;
+                a{
+                    font-size: 14px;
+                     color: #6d6a6a;
+                     line-height: 19px;
+                     margin-left: -36px;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    
+
     }
+}
+              
+ }    }
 }
 
 .active{
@@ -83,14 +140,13 @@
 
 
 
-
-
-.shop-items{
+// .shop-items{
     
-    .shop{
-       width: 512px;
-        .item{
-            width: 25%;
-        }
-    }
-}
+//     .shop{
+//        width: 512px;
+//         .item{
+//             width: 25%;
+//         }
+//     }
+// }
+    
