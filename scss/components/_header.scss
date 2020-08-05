@@ -1,3 +1,89 @@
+.dropdown-toggle::after{
+    content: initial;
+}
+
+.navbar{
+   background-color: $white-color;
+    img{
+        height: 28px;
+        width: 200px;
+    }
+    .navbar-nav{
+        margin: 0 auto;
+
+        .icons{
+        
+             .fas{
+                 margin-left: 18px;
+                //  padding: 5px;
+                 color: #1b2024;
+                 font-size: 19px;
+             }
+             .fa-search{
+                 &:hover
+                 {
+                       color: $primary-color; 
+                       transition: 0.5s;
+                 }
+             }
+
+             sup{
+                 background-color: red;
+                 color: white;
+                 padding: 6px 6px;
+                 border-radius: 50%;
+                 font-size: 12px;
+                position: absolute;
+                top: 0px;
+             }
+
+             .text{
+                color: $primary-black-color;
+                font-size: 12px;
+                font-weight: 500;
+                letter-spacing: .1em;
+                line-height: 27px;
+   
+             }
+        }
+        .nav-item{
+            margin-left: 35px;
+            font-size: 12px;
+            color:rgb(0, 0, 0);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 22px;
+            .nav-link{
+                padding: 0px;
+                color: $head-color;
+                position: relative;
+            &::before{
+             content: "";
+             position: absolute;
+             height: 1px;
+             background-color: black;
+             bottom: 0px;
+             width: 0;
+             @include transition(all 0.4s)
+            }
+            &:hover::before{
+                width: 100%;
+            }
+            }
+        }
+    }
+}
+
+.active{
+    &::before{
+        width: 100% !important;
+    }
+}
+
+
+
+
 
 .shop-items{
     
