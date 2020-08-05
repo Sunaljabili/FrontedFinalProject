@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400;1,500&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
 #footerpage {
   width: 100%;
   height: 350px;
@@ -82,5 +83,61 @@
 
 .shop-items .shop .item {
   width: 25%;
+}
+
+#sendflowers {
+  width: 100%;
+  height: 430px;
+  background-color: #f3f3f3;
+  text-align: left;
+}
+
+#sendflowers .textarea h2 {
+  margin-top: 55px;
+  z-index: 5;
+  min-width: 350px;
+  max-width: 350px;
+  min-height: 100px;
+  max-height: 100px;
+  white-space: normal;
+  font-size: 41px;
+  line-height: 50px;
+  font-weight: 400;
+  color: black;
+  letter-spacing: 0px;
+  font-family: "Playfair Display";
+  padding: 0px;
+  opacity: 1;
+}
+
+#sendflowers .textarea h2 span {
+  color: red;
+}
+
+#sendflowers .textarea p {
+  color: #8b8b8b;
+  font-size: 17px;
+  min-width: 390px;
+  max-width: 390px;
+  line-height: 29px;
+  font-weight: 400;
+  font-family: "Playfair Display";
+}
+
+#sendflowers .textarea img {
+  margin: 5px;
+}
+
+#sendflowers .slider .items {
+  margin-top: 50px;
+  width: 600px;
+  height: 300px;
+}
+
+#sendflowers .slider .items img {
+  width: 450px;
+  height: 375px;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 /*# sourceMappingURL=style.css.map */

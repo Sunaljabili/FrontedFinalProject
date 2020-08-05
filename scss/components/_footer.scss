@@ -24,7 +24,7 @@
         a{
             font-size: $footer-font-size;
             text-decoration: none;
-            color:$footer-links-color;
+            color:$sub-text-color;
             overflow: hidden;
             padding: 0;
             &:hover{
@@ -58,7 +58,7 @@ text-align: center;
     }
     a{
         text-transform: uppercase;
-        color: $footer-links-color;
+        color: $sub-text-color;
         font-size: $footer-font-size;
         font-family: $secondary-font;
         margin-left: 10px;
