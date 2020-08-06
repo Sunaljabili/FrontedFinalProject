@@ -160,26 +160,29 @@
   width: 100%;
 }
 
-.navbar .navbar-nav .dropdown-menu {
+.navbar .navbar-nav .nav-item .dropdownmenus {
   border-radius: 0px;
-  left: -60%;
-  top: 105%;
   padding: 10px 15px;
 }
 
-.navbar .navbar-nav .dropdown-menu .port .portfolioss {
+.navbar .navbar-nav .nav-item .dropdownmenus .layouts .port:hover .portfolioss {
+  display: block !important;
+}
+
+.navbar .navbar-nav .nav-item .dropdownmenus .portfolioss {
+  display: none !important;
   position: absolute;
-  top: 40px;
+  top: 0px !important;
   left: 150px;
 }
 
-.navbar .navbar-nav .dropdown-menu .shop {
+.navbar .shop {
   width: 580px;
   height: 300px;
   text-align: center;
 }
 
-.navbar .navbar-nav .dropdown-menu .shop .item {
+.navbar .shop .item {
   margin-left: 10px;
   font-family: "Playfair Display",serif;
   font-size: 22px;
@@ -191,27 +194,27 @@
   text-align: left;
 }
 
-.navbar .navbar-nav .dropdown-menu .shop .item h5 {
+.navbar .shop .item h5 {
   margin-right: 10px;
 }
 
-.navbar .navbar-nav .dropdown-menu .shop .item ul {
+.navbar .shop .item ul {
   list-style: none;
 }
 
-.navbar .navbar-nav .dropdown-menu .shop .item ul li {
+.navbar .shop .item ul li {
   text-align: left;
   margin-right: 20px;
 }
 
-.navbar .navbar-nav .dropdown-menu .shop .item ul li a {
+.navbar .shop .item ul li a {
   font-size: 14px;
   color: #6d6a6a;
   line-height: 19px;
   margin-left: -36px;
 }
 
-.navbar .navbar-nav .dropdown-menu .shop .item ul li a:hover {
+.navbar .shop .item ul li a:hover {
   text-decoration: none;
 }
 
@@ -257,6 +260,7 @@
   line-height: 29px;
   font-weight: 400;
   font-family: "Playfair Display";
+  z-index: 5;
 }
 
 #sendflowers .textarea img {
@@ -264,19 +268,27 @@
 }
 
 #sendflowers .slider {
-  width: 600px;
+  width: 700px;
   height: 500px;
   position: absolute;
 }
 
 #sendflowers .slider .items {
-  width: 600px;
-  height: 380px;
+  width: 630px;
+  height: 450px;
+  margin: 0 auto;
 }
 
 #sendflowers .slider .items img {
-  width: 100%;
-  height: 385px;
+  width: 500px;
+  height: 400px;
+}
+
+#sendflowers .slider .items img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 #valentine {
@@ -386,13 +398,47 @@
 
 #flowerexpert .title h2 {
   text-align: center;
+  font-size: 38px;
+  line-height: 25px;
+  color: #2b2b2b;
+  font-family: "Playfair Display",serif;
+  font-weight: 400;
 }
 
 #flowerexpert .title p {
   text-align: center;
+  font-family: "Playfair Display";
+  color: #6d6a6a;
+  letter-spacing: 1px;
+  min-width: 400px;
+  max-width: 544px;
+  font-size: 16px;
+  margin-left: 248px;
+  margin-top: 18px;
 }
 
 #flowerexpert .card {
-  border-radius: 50%;
+  border: none;
+}
+
+#flowerexpert .card h5 {
+  color: #1b1b1b;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 32px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+#flowerexpert .card span {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+  display: block;
+  font-size: 12px;
+  color: #afafaf;
+  margin: 2px 0 4px;
 }
 /*# sourceMappingURL=style.css.map */

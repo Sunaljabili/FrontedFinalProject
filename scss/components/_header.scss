@@ -71,23 +71,28 @@
                 width: 100%;
             }
             }
-        }
-        .dropdown-menu{
-            border-radius: 0px;
-            left: -60%;
-            top:105%;
-            padding: 10px 15px;
-           
-            .port{
-              
+            .dropdownmenus{
+                border-radius: 0px;
+                padding: 10px 15px;
+               
+                .layouts{
 
-                .portfolioss{
-                    position: absolute;
-                top: 40px;
-                left: 150px;
+                    .port:hover{  
+                               .portfolioss{display: block !important;} 
+                            }
+                    }
+                    .portfolioss{
+                        display: none !important;
+                        position: absolute;
+                        top: 0px !important;
+                         left: 150px;
+                    
                 }
+                }
+                    
             }
-            
+        }
+        
             
     .shop{
     width: 580px;
@@ -129,8 +134,7 @@
     }
 }
               
- }    }
-}
+    }
 
 .active{
     &::before{
