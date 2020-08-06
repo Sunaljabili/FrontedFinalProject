@@ -441,4 +441,146 @@
   color: #afafaf;
   margin: 2px 0 4px;
 }
+
+#join {
+  padding: 120px 0px;
+  background-image: url("../img/h3-background-img.jpg");
+  background-position: 50% 88px;
+  background-repeat: no-repeat;
+  height: 530px !important;
+  max-height: 530px !important;
+  width: 100%;
+  background-attachment: fixed;
+  position: relative;
+}
+
+#join::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+#join .input-text {
+  text-align: center;
+}
+
+#join .input-text h4 {
+  color: #ffffff;
+  font-size: 30px;
+  line-height: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+#join .input-text .inpt {
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#join .input-text .inpt input {
+  height: 60px;
+}
+
+#join .input-text .inpt .input-group-prepend span {
+  font-weight: 500;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 0px;
+  background-color: #f34f3f;
+  border: none;
+  color: white;
+}
+
+#fromblog {
+  width: 100%;
+  height: 550px;
+  background-color: #f8f8f8;
+}
+
+#fromblog .blogtext {
+  text-align: center;
+  width: 520px;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+#fromblog .blogtext h3 {
+  font-size: 38px;
+  line-height: 23px;
+  color: #2b2b2b;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+#fromblog .blogtext p {
+  font-size: 17px;
+  line-height: 29px;
+  color: #6d6a6a;
+  text-align: center;
+  padding: 5px;
+  font-family: "Lora", serif;
+  letter-spacing: 0px;
+}
+
+#fromblog .card {
+  margin-top: 60px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+#fromblog .card img {
+  cursor: pointer;
+}
+
+#fromblog .card img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#fromblog .card span {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  color: black;
+  background-color: #fff;
+  line-height: 16px;
+  padding: 12px 16px 10px;
+}
+
+#fromblog .card span:hover {
+  color: #f34f3f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#fromblog .card-body h5 {
+  font-size: 22px;
+  color: #2b2b2b;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+#fromblog .card-body p {
+  font-family: "Lora", serif, serif;
+  color: #8b8b8b;
+  font-size: 17px;
+}
 /*# sourceMappingURL=style.css.map */
