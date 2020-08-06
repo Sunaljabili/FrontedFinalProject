@@ -10,23 +10,22 @@
 
         h2{
             margin-top:55px ;
-    z-index: 5;
-    min-width: 350px;
-    max-width: 350px;
-    min-height: 100px;
-    max-height: 100px;
-    white-space: normal;
-    font-size: $primary-head-font-size;
-    line-height: 50px;
-    font-weight: 400;
-    color: $primary-black-color;
-    letter-spacing: 0px;
-    font-family:$playfair-font;
-    padding: 0px;
-    opacity: 1;
+            z-index: 5;
+            min-width: 350px;
+            max-width: 350px;
+            min-height: 100px;
+            max-height: 100px;
+            white-space: normal;
+            font-size: $primary-head-font-size;
+            line-height: 50px;
+            font-weight: 400;
+            color: $primary-black-color;
+            letter-spacing: 0px;
+            font-family:$playfair-font;
+            padding: 0px;
+            opacity: 1;
             span{
-                color: $red-color;
-              
+            color: $red-color;
             }
         }
         p{

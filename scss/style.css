@@ -278,4 +278,121 @@
   width: 100%;
   height: 385px;
 }
+
+#valentine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 500px;
+  padding: 50px 0px;
+  background-color: #f7f7f7;
+}
+
+#valentine .modalvideo {
+  cursor: pointer;
+}
+
+#valentine .modalvideo .img {
+  width: 500px;
+  height: 330px;
+  overflow: hidden;
+  border: 1px solid white;
+  position: relative;
+}
+
+#valentine .modalvideo .img img {
+  width: 500px;
+  height: 330px;
+}
+
+#valentine .modalvideo .img img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+#valentine .modalvideo .circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  top: 35%;
+  left: 38%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#valentine .modalvideo .circle .fas {
+  font-size: 50px;
+  color: #f34f3f;
+}
+
+#valentine .valentine-text h2 {
+  color: #2b2b2b;
+  font-family: "Playfair Display",serif;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 40px;
+  display: block;
+  margin: 14px 0 0;
+  letter-spacing: 1px;
+}
+
+#valentine .valentine-text h2 span {
+  color: red;
+}
+
+#valentine .valentine-text p {
+  font-size: 17px;
+  line-height: 29px;
+  margin-top: 27px;
+  font-family: "Lora", serif;
+  color: #6d6a6a;
+}
+
+#valentine .valentine-text .valentine-items {
+  margin-top: 40px;
+}
+
+#valentine .valentine-text .valentine-items .items {
+  margin-top: 18px;
+}
+
+#valentine .valentine-text .valentine-items .items span {
+  margin-left: 5px;
+  font-family: "Lora", serif;
+  color: #6d6a6a;
+}
+
+#flowerexpert {
+  width: 100%;
+  height: 500px;
+  background-color: white;
+}
+
+#flowerexpert .title {
+  text-align: center;
+}
+
+#flowerexpert .title h2 {
+  text-align: center;
+}
+
+#flowerexpert .title p {
+  text-align: center;
+}
+
+#flowerexpert .card {
+  border-radius: 50%;
+}
 /*# sourceMappingURL=style.css.map */
