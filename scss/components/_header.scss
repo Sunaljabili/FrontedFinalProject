@@ -75,14 +75,12 @@
                 border-radius: 0px;
                 padding: 10px 15px;
                
-                .layouts{
+                .layouts {
 
-                    .port:hover{  
-                               .portfolioss{display: block !important;} 
-                            }
-                    }
+                  
+                    
                     .portfolioss{
-                        display: none !important;
+                        display: none;
                         position: absolute;
                         top: 0px !important;
                          left: 150px;
@@ -133,8 +131,13 @@
 
     }
 }
-              
+}
     }
+
+.layouts:hover .portfolioss{
+    
+display: block !important;
+}
 
 .active{
     &::before{

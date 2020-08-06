@@ -165,24 +165,20 @@
   padding: 10px 15px;
 }
 
-.navbar .navbar-nav .nav-item .dropdownmenus .layouts .port:hover .portfolioss {
-  display: block !important;
-}
-
-.navbar .navbar-nav .nav-item .dropdownmenus .portfolioss {
-  display: none !important;
+.navbar .navbar-nav .nav-item .dropdownmenus .layouts .portfolioss {
+  display: none;
   position: absolute;
   top: 0px !important;
   left: 150px;
 }
 
-.navbar .shop {
+.navbar .navbar-nav .shop {
   width: 580px;
   height: 300px;
   text-align: center;
 }
 
-.navbar .shop .item {
+.navbar .navbar-nav .shop .item {
   margin-left: 10px;
   font-family: "Playfair Display",serif;
   font-size: 22px;
@@ -194,28 +190,32 @@
   text-align: left;
 }
 
-.navbar .shop .item h5 {
+.navbar .navbar-nav .shop .item h5 {
   margin-right: 10px;
 }
 
-.navbar .shop .item ul {
+.navbar .navbar-nav .shop .item ul {
   list-style: none;
 }
 
-.navbar .shop .item ul li {
+.navbar .navbar-nav .shop .item ul li {
   text-align: left;
   margin-right: 20px;
 }
 
-.navbar .shop .item ul li a {
+.navbar .navbar-nav .shop .item ul li a {
   font-size: 14px;
   color: #6d6a6a;
   line-height: 19px;
   margin-left: -36px;
 }
 
-.navbar .shop .item ul li a:hover {
+.navbar .navbar-nav .shop .item ul li a:hover {
   text-decoration: none;
+}
+
+.layouts:hover .portfolioss {
+  display: block !important;
 }
 
 .active::before {
