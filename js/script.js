@@ -7,6 +7,9 @@ $(document).ready(function(){
         $(this).removeClass("show");
         $(this).find(".dropdown-menu").removeClass("show");
     })
+ 
+  // Slider Plugin
+  
 
     // Slick  Plugin
     if($(".one-time").length){
@@ -33,5 +36,24 @@ $(document).ready(function(){
         arrows:false,
       });
     }
+    $('.slider').slick({
+      infinite: true,
+      speed: 2000,
+      fade: true,
+      cssEase: 'linear',
+      autoplay: true,
+      autoplaySpeed: 4500,
+      prevArrow: '<i class="fal fa-long-arrow-left"></i>',
+      nextArrow: '<i class="fal fa-long-arrow-right"></i>',
+      responsive: [{
+          breakpoint: 1040,
+          settings: {
+              infinite: true,
+              dots: true,
+              arrows: false,
+          }
+      }]
+
+  });
         
 });

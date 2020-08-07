@@ -1,21 +1,20 @@
 #valentine{
     display: flex;
     width: 100%;
-    height: 500px;
     padding: 50px 0px;
     background-color: #f7f7f7;
   .modalvideo{
+      width: 100%;
     cursor: pointer;
     .img{
-        width: 500px;
-        height: 330px;
+        width: 100%;
+        height:100%;
         overflow: hidden;
         border: 1px solid white;
         position: relative;
         img{
-           
-            width: 500px;
-            height:330px;
+            width: 100%;
+            height:100%;
             &:hover{
                 transform: scale(1.1);
                 transition: 0.8s;

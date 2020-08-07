@@ -222,66 +222,128 @@
   width: 100% !important;
 }
 
-#sendflowers {
+#slider .slider img {
   width: 100%;
-  background-color: #f3f3f3;
-  text-align: left;
-  position: relative;
-}
-
-#sendflowers .textarea h2 {
-  margin-top: 55px;
-  z-index: 5;
-  min-width: 200px;
-  max-width: 350px;
-  min-height: 100px;
-  max-height: 200px;
-  white-space: normal;
-  font-size: 41px;
-  line-height: 50px;
-  font-weight: 400;
-  color: black;
-  letter-spacing: 0px;
-  font-family: "Playfair Display";
-  padding: 0px;
-  opacity: 1;
-}
-
-#sendflowers .textarea h2 span {
-  color: red;
-}
-
-#sendflowers .textarea p {
-  color: #8b8b8b;
-  font-size: 17px;
-  min-width: 390px;
-  max-width: 390px;
-  line-height: 29px;
-  font-weight: 400;
-  font-family: "Playfair Display";
-  z-index: 5;
-}
-
-#sendflowers .textarea img {
-  margin: 5px;
-}
-
-#sendflowers .slider .items img {
   -webkit-animation: cssAnimation 9s ease-in-out forwards;
           animation: cssAnimation 9s ease-in-out forwards;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  width: 100%;
-  height: 400px;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
-#sendflowers .slider .items img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+#slider .slider i[class*="fa-long"] {
+  font-size: 45px;
+  position: absolute;
+  top: 45%;
+  z-index: 10;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+#slider .slider i[class*="fa-long"]:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#slider .slider i[class*="right"] {
+  right: 15px;
+}
+
+#slider .slider i[class*="left"] {
+  left: 15px;
+}
+
+#slider .slider-text {
+  font-size: 41px;
+  font-family: "Playfair Display";
+  display: block;
+  visibility: visible;
+  line-height: 48px;
+  padding: 30px;
+  max-width: 85%;
+  position: absolute;
+  left: 3%;
+  top: 15%;
+  z-index: 10;
+}
+
+#slider .slider-text span {
+  color: #f34f3f;
+}
+
+#slider .slider-text p {
+  white-space: normal;
+  font-size: 19px;
+  line-height: 29px;
+  font-weight: 400;
+  color: #6d6a6a;
+  letter-spacing: 0px;
+  font-family: Lora;
+  text-align: justify;
+}
+
+#slider .slider-text p {
+  min-width: 400px;
+  max-width: 400px;
+}
+
+#slider .slider-text .width-min {
+  width: 347px;
+}
+
+@media (max-width: 1040px) {
+  #slider .slider div {
+    height: 100vh;
+  }
+  #slider .slider img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #slider .slider-text {
+    top: 130px;
+    left: 15px;
+    font-size: 30px !important;
+  }
+  #slider .slider-text p {
+    font-size: 17px;
+    min-width: 300px;
+    max-width: 300px;
+  }
+  #slider .slick-dots {
+    position: absolute;
+    left: 46%;
+    top: 88%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+  }
+  #slider .slick-dots li {
+    margin: 0 0.25rem;
+  }
+  #slider .slick-dots button {
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    padding: 0;
+    border: none;
+    border-radius: 100%;
+    background-color: black;
+    text-indent: -9999px;
+    outline: none;
+  }
+  #slider .slick-dots li.slick-active button {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
 }
 
 @-webkit-keyframes cssAnimation {
@@ -290,8 +352,8 @@
             transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.09);
-            transform: scale(1.09);
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
   }
   100% {
     -webkit-transform: scale(1);
@@ -305,8 +367,8 @@
             transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.09);
-            transform: scale(1.09);
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
   }
   100% {
     -webkit-transform: scale(1);
@@ -319,26 +381,26 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 500px;
   padding: 50px 0px;
   background-color: #f7f7f7;
 }
 
 #valentine .modalvideo {
+  width: 100%;
   cursor: pointer;
 }
 
 #valentine .modalvideo .img {
-  width: 500px;
-  height: 330px;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   border: 1px solid white;
   position: relative;
 }
 
 #valentine .modalvideo .img img {
-  width: 500px;
-  height: 330px;
+  width: 100%;
+  height: 100%;
 }
 
 #valentine .modalvideo .img img:hover {

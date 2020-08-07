@@ -1,74 +1,124 @@
-// SEND FLOWERS SECTION SCSS START
-#sendflowers{
-    width:100%;
-    // height: 430px;
-    background-color: $sendflower-color;
-    text-align: left;
-    position: relative;
-    .textarea{
-        h2{
-            margin-top:55px ;
-            z-index: 5;
-            min-width: 200px;
-            max-width: 350px;
-            min-height: 100px;
-            max-height: 200px;
-            white-space: normal;
-            font-size: $primary-head-font-size;
-            line-height: 50px;
-            font-weight: 400;
-            color: $primary-black-color;
-            letter-spacing: 0px;
-            font-family:$playfair-font;
-            padding: 0px;
-            opacity: 1;
-            span{
-            color: $red-color;
+#slider {
+    .slider {
+        img {
+            width: 100%;
+            animation: cssAnimation 9s ease-in-out forwards;
+            animation-iteration-count: infinite;
+        }
+        i[class*="fa-long"] {
+            font-size: 45px;
+            position: absolute;
+            top: 45%;
+            z-index: 10;
+            transition: color 0.4s;
+            color: rgba($color: #000000, $alpha: 0.3);
+            &:hover {
+                color: rgba($color: #000000, $alpha: 0.5);
             }
         }
-        p{
-            color:$sub-text-color;
-            font-size: $sub-title-font-size;
-            min-width: 390px;
-            max-width: 390px;
-            line-height: 29px;
-            font-weight: 400;
-            font-family: $playfair-font;
-            z-index: 5;
+        i[class*="right"] {
+            right: 15px
         }
-        img{
-          margin: 5px;
+        i[class*="left"] {
+            left: 15px
         }
     }
-    .slider{         
-        .items{
-            img{
-                animation: cssAnimation 9s ease-in-out forwards;
-                animation-iteration-count: infinite;
-                width: 100%;
-                height: 400px;
-                transform: scale(1.2);
-                &:hover{
-                    transform:scale(1.1);
-                    transition: 0.8s;
-                }
-               
-               
-            }
+    .slider-text {
+        font-size: 41px;
+    font-family: $playfair-font;
+    display: block;
+    visibility: visible;
+    line-height: 48px;
+    padding: 30px;
+    max-width: 85%;
+    span {
+        color: $primary-color;
+    }
+    p {
+        white-space: normal;
+        font-size: 19px;
+        line-height: 29px;
+        font-weight: 400;
+        color: rgb(109, 106, 106);
+        letter-spacing: 0px;
+        font-family: Lora;
+        text-align: justify;
+    }
+        position: absolute;
+        left: 3%;
+        top: 15%;
+        z-index: 10;
+        p {
+            min-width: 400px;
+            max-width: 400px;
+        }
+        .width-min {
+            width: 347px;
         }
     }
-
 }
+
+@media (max-width:1040px) {
+    #slider {
+        .slider {
+            div {
+                height: 100vh;
+            }
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .slider-text {
+            top: 130px;
+            left: 15px;
+            font-size: 30px!important;
+            p {
+                font-size: 17px;
+                min-width: 300px;
+                max-width: 300px;
+            }
+        }
+        .slick-dots {
+            position: absolute;
+            left: 46%;
+            top: 88%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 1rem 0;
+            list-style-type: none;
+            li {
+                margin: 0 0.25rem;
+            }
+            button {
+                display: block;
+                width: 0.5rem;
+                height: 0.5rem;
+                padding: 0;
+                border: none;
+                border-radius: 100%;
+                background-color: black;
+                text-indent: -9999px;
+                outline: none;
+            }
+            li.slick-active button {
+                width: 0.6rem;
+                height: 0.6rem;
+            }
+        }
+    }
+}
+
 @keyframes cssAnimation {
     0% {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.09);
+        transform: scale(1.08);
     }
     100% {
         transform: scale(1);
     }
 }
-
-// SEND FLOWERS SECTION SCSS End
