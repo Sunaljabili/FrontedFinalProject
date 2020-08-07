@@ -1,5 +1,6 @@
 #selectflowers{
 width: 100%;
+background-color:white;
     .flowersname{
         ul{
             display: flex;
@@ -64,8 +65,73 @@ width: 100%;
         }
         
     }
-}
 
+    
+
+        .card{
+            overflow: hidden;
+            border: none;
+     &:hover{
+
+        .add-to-card{
+            opacity: 1;
+            transition: 0.5;
+            color: $primary-color;
+            
+        }
+        .price{
+            opacity: 0;
+            transition: 0.5;
+        }
+     }
+             img{
+             
+                &:hover{
+                    transform: scale(1.04);
+                    transition: 0.5s;
+                }
+             }
+            }
+             .card-text{
+                 position: relative;
+                
+                h6{
+                    color: #1b1b1b;
+                    font-family: $secondary-font;
+                    font-size: 12px;
+                    line-height: 32px;
+                    font-weight: 500;
+                    letter-spacing: .1em;
+                    text-transform: uppercase;
+                    }
+
+                .txtcard{
+                    position: absolute;
+                    color: #afafaf;
+                    font-size: 12px;
+                    font-family:$secondary-font;
+                    line-height: 24px;
+                }
+    
+                .add-to-card{
+                     opacity:0 ;
+                     left: 78px;
+
+                }
+    
+                .price{
+                    left:60px;
+                    opacity:1;
+                    color: #afafaf;
+                    font-size: 12px;
+                    font-family:$secondary-font;
+                    line-height: 24px;
+                }
+     }
+        
+    
+   
+}
 .activeclr{
     color: $primary-color !important;
 }
