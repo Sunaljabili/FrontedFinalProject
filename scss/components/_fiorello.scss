@@ -13,19 +13,23 @@
             font-family: $secondary-font,sans-serif;;
          }
     }
-    .item{
-        cursor: pointer;
-        &:focus{
-            outline: none;
-        }
-        
-        img{
-            width: 100%;
-            height: 100%;
+    .autoplayowlcarousel{
+        width: 100%;
+        .item{
             cursor: pointer;
             &:focus{
                 outline: none;
             }
+            
+            img{
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                &:focus{
+                    outline: none;
+                }
+            }
         }
     }
+    
 }

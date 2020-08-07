@@ -473,7 +473,6 @@
 
 #flowerexpert {
   width: 100%;
-  height: 500px;
   background-color: white;
 }
 
@@ -498,7 +497,7 @@
   min-width: 400px;
   max-width: 544px;
   font-size: 16px;
-  margin-left: 248px;
+  margin: 0 auto;
   margin-top: 18px;
 }
 
@@ -532,7 +531,6 @@
   background-image: url("../img/h3-background-img.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
-  height: 530px !important;
   max-height: 530px !important;
   width: 100%;
   background-attachment: fixed;
@@ -584,7 +582,6 @@
 
 #fromblog {
   width: 100%;
-  height: 550px;
   background-color: #f8f8f8;
 }
 
@@ -893,21 +890,25 @@
   font-family: "Montserrat", sans-serif, sans-serif;
 }
 
-#fiorello .item {
+#fiorello .autoplayowlcarousel {
+  width: 100%;
+}
+
+#fiorello .autoplayowlcarousel .item {
   cursor: pointer;
 }
 
-#fiorello .item:focus {
+#fiorello .autoplayowlcarousel .item:focus {
   outline: none;
 }
 
-#fiorello .item img {
+#fiorello .autoplayowlcarousel .item img {
   width: 100%;
   height: 100%;
   cursor: pointer;
 }
 
-#fiorello .item img:focus {
+#fiorello .autoplayowlcarousel .item img:focus {
   outline: none;
 }
 /*# sourceMappingURL=style.css.map */
