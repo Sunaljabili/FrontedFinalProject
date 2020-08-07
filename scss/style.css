@@ -653,4 +653,68 @@
   text-transform: none;
   color: #afafaf;
 }
+
+#selectflowers {
+  width: 100%;
+}
+
+#selectflowers .flowersname ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+#selectflowers .flowersname ul li {
+  padding: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  letter-spacing: .1em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#selectflowers .flowersname ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  letter-spacing: .1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+#selectflowers .flowersname ul li a:hover {
+  color: #f34f3f;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+#selectflowers .drpdwn .btn {
+  color: black !important;
+  margin-left: 80px;
+}
+
+#selectflowers .drpdwn .drpdwnhover {
+  width: 400px;
+  position: relative;
+}
+
+#selectflowers .drpdwn .drpdwnhover .menudrp {
+  width: 300px;
+}
+
+#selectflowers .drpdwn .drpdwnhover .menudrp h6 {
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.363em;
+  color: #2b2b2b;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+.active {
+  color: #f34f3f !important;
+}
 /*# sourceMappingURL=style.css.map */
