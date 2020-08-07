@@ -32,9 +32,9 @@ width: 100%;
 
     .drpdwn{
     
-        .btn{
+        .btnfltr{
             color: black !important;
-            margin-left: 80px;
+            margin-left: 150px;
         }
         .drpdwnhover{
             width: 400px;
@@ -49,12 +49,23 @@ width: 100%;
                   font-family:$playfair-font,serif;
                   font-weight: 400;
               }
+              a{
+                font-size: 13px;
+                text-transform: capitalize;
+                font-weight: 500;
+                color: $sub-text-color;
+                font-family: $secondary-font;
+
+                &:hover{
+                    color: black;
+                }
+              }
             }
         }
         
     }
 }
 
-.active{
+.activeclr{
     color: $primary-color !important;
 }

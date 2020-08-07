@@ -8,6 +8,7 @@ $(document).ready(function(){
         $(this).find(".dropdown-menu").removeClass("show");
     })
 
+    // Slick  Plugin
     if($(".one-time").length){
       $('.one-time').slick({
         dots: false,
@@ -16,9 +17,21 @@ $(document).ready(function(){
         slidesToShow: 1,
         adaptiveHeight: true,
         prevArrow:'<i class="fas fa-long-arrow-alt-left"></i>',
-        nextArrow:'<i class="fas fa-long-arrow-alt-right"></i>'
+        nextArrow:'<i class="fas fa-long-arrow-alt-right"></i>',
       });
         
+    }
+    // Slick Plugin
+    if($(".autoplay").length){
+      $('.autoplay').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        dots: false,
+        autoplaySpeed: 1000,
+        touchMove:true,
+        arrows:false,
+      });
     }
         
 });

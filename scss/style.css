@@ -267,21 +267,15 @@
   margin: 5px;
 }
 
-#sendflowers .slider {
-  width: 700px;
-  height: 500px;
-  position: absolute;
-}
-
-#sendflowers .slider .items {
-  width: 630px;
-  height: 450px;
-  margin: 0 auto;
-}
-
 #sendflowers .slider .items img {
-  width: 500px;
+  -webkit-animation: cssAnimation 9s ease-in-out forwards;
+          animation: cssAnimation 9s ease-in-out forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  width: 100%;
   height: 400px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 #sendflowers .slider .items img:hover {
@@ -289,6 +283,36 @@
           transform: scale(1.1);
   -webkit-transition: 0.8s;
   transition: 0.8s;
+}
+
+@-webkit-keyframes cssAnimation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.09);
+            transform: scale(1.09);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes cssAnimation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.09);
+            transform: scale(1.09);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 #valentine {
@@ -445,7 +469,7 @@
 #join {
   padding: 120px 0px;
   background-image: url("../img/h3-background-img.jpg");
-  background-position: 50% 88px;
+  background-position: 50%;
   background-repeat: no-repeat;
   height: 530px !important;
   max-height: 530px !important;
@@ -691,9 +715,9 @@
   transition: 0.5;
 }
 
-#selectflowers .drpdwn .btn {
+#selectflowers .drpdwn .btnfltr {
   color: black !important;
-  margin-left: 80px;
+  margin-left: 150px;
 }
 
 #selectflowers .drpdwn .drpdwnhover {
@@ -714,7 +738,53 @@
   font-weight: 400;
 }
 
-.active {
+#selectflowers .drpdwn .drpdwnhover .menudrp a {
+  font-size: 13px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #8b8b8b;
+  font-family: "Montserrat", sans-serif;
+}
+
+#selectflowers .drpdwn .drpdwnhover .menudrp a:hover {
+  color: black;
+}
+
+.activeclr {
   color: #f34f3f !important;
+}
+
+#fiorello {
+  width: 100%;
+}
+
+#fiorello .headtext h3 {
+  z-index: 2;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #2d2b2b;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  padding: 11px 22px;
+  font-family: "Montserrat", sans-serif, sans-serif;
+}
+
+#fiorello .item {
+  cursor: pointer;
+}
+
+#fiorello .item:focus {
+  outline: none;
+}
+
+#fiorello .item img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+#fiorello .item img:focus {
+  outline: none;
 }
 /*# sourceMappingURL=style.css.map */
