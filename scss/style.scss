@@ -3,12 +3,12 @@
 @import "shared/mixings";
 @import "shared/fonts";
 
-// Components Css
+// Components Scss
 @import "components/footer";
 @import "components/header";
 
-// Sections Css
-@import "components/sendflowers";
+// Index Page Sections Scss
+@import "components/slider";
 @import "components/valentines";
 @import "components/flowerexperts";
 @import "components/joincolorful";
@@ -17,4 +17,6 @@
 @import "components/selectflower";
 @import "components/fiorello";
 
-// Pages Scss 
+// Accordion Page Sections Scss 
+@import "components/accordionspage";
+@import "components/accordiontitle";

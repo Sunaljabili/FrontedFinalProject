@@ -32,16 +32,15 @@ background-color:white;
     }
 
     .drpdwn{
-    
         .btnfltr{
             color: black !important;
             margin-left: 150px;
         }
         .drpdwnhover{
-            width: 400px;
+            width: 100%;
              position: relative;
             .menudrp{
-                width: 300px;
+                width: 100%;
               h6{
                   text-align: center;
                   font-size: 22px;
@@ -134,4 +133,13 @@ background-color:white;
 }
 .activeclr{
     color: $primary-color !important;
+}
+@media  screen and (max-width:425px){
+    #selectflowers{
+        .drpdwn{
+            .btnfltr{
+                margin-left: 0px !important;
+            }
+        }
+    }
 }

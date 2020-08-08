@@ -1,6 +1,5 @@
 #carousel{
     width: 100%;
-    height: 380px;
     background-color: $white-color;
     position: relative;
     
@@ -11,7 +10,7 @@
         z-index: 5;
     }
     .fa-long-arrow-alt-left{
-        top: 116px;
+        top: 126px;
         cursor: pointer;
         position: absolute;
         
@@ -25,7 +24,7 @@
     .img-text{
         margin: 0 auto;
         text-align: center;
-        width: 500px;
+        width: 480px;
         position: relative;
         &:focus{
             outline: none;

@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400;1,500&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
 #footerpage {
-  width: 100%;
-  height: 350px;
   background-color: #fefaf3;
 }
 
@@ -75,10 +73,6 @@
   color: #f34f3f;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-
-.dropdown-toggle::after {
-  content: initial;
 }
 
 .navbar {
@@ -363,7 +357,7 @@
   font-weight: 400;
   color: #6d6a6a;
   letter-spacing: 0px;
-  font-family: Lora;
+  font-family: "Lora", serif;
   text-align: justify;
 }
 
@@ -373,7 +367,7 @@
 }
 
 #slider .slider-text .width-min {
-  width: 347px;
+  width: 350px;
 }
 
 @media (max-width: 1040px) {
@@ -429,6 +423,18 @@
   #slider .slick-dots li.slick-active button {
     width: 0.6rem;
     height: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #slider .slider-text p {
+    display: none !important;
+  }
+  #slider .slider-text .width-min {
+    width: 230px !important;
+  }
+  #slider .slider-text img {
+    display: none !important;
   }
 }
 
@@ -580,8 +586,6 @@
   font-family: "Playfair Display";
   color: #6d6a6a;
   letter-spacing: 1px;
-  min-width: 400px;
-  max-width: 544px;
   font-size: 16px;
   margin: 0 auto;
   margin-top: 18px;
@@ -632,10 +636,6 @@
   height: 100%;
 }
 
-#join .input-text {
-  text-align: center;
-}
-
 #join .input-text h4 {
   color: #ffffff;
   font-size: 30px;
@@ -672,9 +672,7 @@
 }
 
 #fromblog .blogtext {
-  text-align: center;
-  width: 520px;
-  height: 100px;
+  width: 100%;
   margin: 0 auto;
   margin-top: 15px;
 }
@@ -702,7 +700,7 @@
   margin-top: 60px;
   overflow: hidden;
   position: relative;
-  width: 100%;
+  width: 22rem;
   cursor: pointer;
 }
 
@@ -752,9 +750,14 @@
   font-size: 17px;
 }
 
+@media screen and (max-width: 600px) {
+  #fromblog .card {
+    width: 18rem !important;
+  }
+}
+
 #carousel {
   width: 100%;
-  height: 380px;
   background-color: #ffffff;
   position: relative;
 }
@@ -767,7 +770,7 @@
 }
 
 #carousel .fa-long-arrow-alt-left {
-  top: 116px;
+  top: 126px;
   cursor: pointer;
   position: absolute;
 }
@@ -780,7 +783,7 @@
 #carousel .img-text {
   margin: 0 auto;
   text-align: center;
-  width: 500px;
+  width: 480px;
   position: relative;
 }
 
@@ -866,12 +869,12 @@
 }
 
 #selectflowers .drpdwn .drpdwnhover {
-  width: 400px;
+  width: 100%;
   position: relative;
 }
 
 #selectflowers .drpdwn .drpdwnhover .menudrp {
-  width: 300px;
+  width: 100%;
 }
 
 #selectflowers .drpdwn .drpdwnhover .menudrp h6 {
@@ -958,6 +961,12 @@
 
 .activeclr {
   color: #f34f3f !important;
+}
+
+@media screen and (max-width: 425px) {
+  #selectflowers .drpdwn .btnfltr {
+    margin-left: 0px !important;
+  }
 }
 
 #fiorello {
