@@ -75,6 +75,10 @@
   transition: 0.5s;
 }
 
+.dropdown-toggle::after {
+  content: initial;
+}
+
 .navbar {
   background-color: #ffffff;
 }
@@ -82,10 +86,6 @@
 .navbar img {
   height: 28px;
   width: 200px;
-}
-
-.navbar .navbar-nav {
-  margin: 0 auto;
 }
 
 .navbar .navbar-nav .icons {
@@ -127,6 +127,7 @@
   font-size: 12px;
   color: black;
   font-weight: 500;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
   line-height: 22px;
 }
@@ -151,6 +152,32 @@
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover::before {
+  width: 100%;
+}
+
+.navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+  padding: 8px 2px;
+  text-transform: uppercase;
+  color: #2b2b2b;
+  position: relative;
+  font-size: 13px;
+  color: #737373;
+  line-height: 19px;
+}
+
+.navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: black;
+  bottom: 0px;
+  width: 0;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+.navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover::before {
   width: 100%;
 }
 
@@ -228,45 +255,36 @@
   left: 157px;
 }
 
-.navbar .navbar-nav .shop {
+.navbar .navbar-nav .shop-items .shop {
   width: 580px;
-  height: 300px;
   text-align: center;
 }
 
-.navbar .navbar-nav .shop .item {
+.navbar .navbar-nav .shop-items .shop .item {
   margin-left: 10px;
-  font-family: "Playfair Display",serif;
-  font-size: 22px;
-  text-transform: none;
-  line-height: 1.1em;
-  color: #1b1b1b;
-  min-width: 160px;
-  max-width: 160px;
-  text-align: left;
 }
 
-.navbar .navbar-nav .shop .item h5 {
+.navbar .navbar-nav .shop-items .shop .item h5 {
   margin-right: 10px;
 }
 
-.navbar .navbar-nav .shop .item ul {
+.navbar .navbar-nav .shop-items .shop .item ul {
   list-style: none;
 }
 
-.navbar .navbar-nav .shop .item ul li {
+.navbar .navbar-nav .shop-items .shop .item ul li {
   text-align: left;
   margin-right: 20px;
 }
 
-.navbar .navbar-nav .shop .item ul li a {
+.navbar .navbar-nav .shop-items .shop .item ul li a {
   font-size: 14px;
   color: #6d6a6a;
-  line-height: 19px;
+  line-height: 30px;
   margin-left: -36px;
 }
 
-.navbar .navbar-nav .shop .item ul li a:hover {
+.navbar .navbar-nav .shop-items .shop .item ul li a:hover {
   text-decoration: none;
 }
 
@@ -1019,5 +1037,134 @@
 
 #fiorello .autoplayowlcarousel .item img:focus {
   outline: none;
+}
+
+#headtitle {
+  width: 100%;
+  background-color: white;
+}
+
+#headtitle h1 {
+  color: #0e0e0e;
+  font-size: 50px;
+  line-height: 1.32em;
+  font-family: playfair display,serif;
+  font-weight: 400;
+}
+
+.card-body {
+  display: none;
+}
+
+.activeaccordion {
+  display: block;
+}
+
+#hoveraccordion .card {
+  cursor: pointer;
+}
+
+#hoveraccordion .card .card-header {
+  background-color: white;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #1b1b1b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  padding: 20px 30px;
+  position: relative;
+}
+
+#hoveraccordion .card .card-header:hover {
+  background-color: #f34f3f;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#hoveraccordion .card .card-header:hover .fa-plus {
+  opacity: 0 !important;
+}
+
+#hoveraccordion .card .card-header:hover .fa-minus {
+  opacity: 1 !important;
+}
+
+#hoveraccordion .card .card-header .fas {
+  position: absolute;
+  margin-left: 5px;
+  margin-right: 5px;
+  left: 2px;
+  top: 20px;
+  font-size: 12px;
+}
+
+#hoveraccordion .card .card-header .fa-plus {
+  opacity: 1;
+}
+
+#hoveraccordion .card .card-header .fa-minus {
+  opacity: 0;
+}
+
+#hoveraccordion .card .card-body {
+  border: none;
+}
+
+#hoveraccordion .card .card-body .card-text {
+  font-family: "Lora", serif;
+  color: #8b8b8b;
+  font-size: 15px;
+  letter-spacing: 0x;
+  line-height: 1.6em;
+}
+
+#accordionversiontwo {
+  margin-top: 100px;
+}
+
+#accordionversiontwo .card {
+  border: 0;
+}
+
+#accordionversiontwo .card .card-header {
+  background-color: white;
+  border-bottom: 1px solid  #8b8b8b;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #1b1b1b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  padding: 20px 30px;
+  position: relative;
+}
+
+#accordionversiontwo .card .card-header:hover {
+  color: #f34f3f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#accordionversiontwo .card .card-header:hover .fa-plus {
+  opacity: 0;
+}
+
+#accordionversiontwo .card .card-header:hover .fa-minus {
+  opacity: 1;
+}
+
+#accordionversiontwo .card .card-header .fas {
+  position: absolute;
+  left: 10px;
+}
+
+#accordionversiontwo .card .card-header .fa-plus {
+  opacity: 1;
+}
+
+#accordionversiontwo .card .card-header .fa-minus {
+  opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */

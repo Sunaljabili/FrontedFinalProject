@@ -1,0 +1,117 @@
+#headtitle{
+    width: 100%;
+    background-color: white;
+    h1{
+        color: #0e0e0e;
+        font-size: 50px;
+        line-height: 1.32em;
+        font-family: playfair display,serif;
+        font-weight: 400;
+    }
+}
+.card-body{
+    display: none;
+}
+.activeaccordion{
+    display: block;
+}
+
+#hoveraccordion{
+    .card{
+        cursor: pointer;
+        .card-header{
+            background-color: white ;
+            font-weight: 500;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: #1b1b1b;
+            font-family: $secondary-font;
+            font-size: 12px;
+            padding: 20px 30px;
+            position: relative;
+            &:hover {
+                background-color:$primary-color;
+                color: white;
+                transition: 0.5s;
+                .fa-plus{
+                    opacity: 0 !important;
+                }
+                .fa-minus{
+                    opacity: 1 !important;
+                }
+            }  
+                .fas{
+                    position: absolute;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    left: 2px;
+                    top: 20px;
+                    font-size: 12px;
+                }
+                .fa-plus{
+                   opacity: 1;
+                   
+                  }
+                  .fa-minus{
+                   opacity: 0;
+                  }
+        }
+        .card-body{
+         border: none;
+            .card-text{
+               font-family:$primary-fonts;
+               color: $sub-text-color;
+               font-size:15px;
+               letter-spacing: 0x;
+               line-height: 1.6em;
+            }
+        }
+        
+    }
+}
+
+#accordionversiontwo{
+    margin-top: 100px;
+     .card{
+         border: 0;
+         
+
+         .card-header{
+            background-color: white ;
+            border-bottom: 1px solid  #8b8b8b;
+            font-weight: 500;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: #1b1b1b;
+            font-family: $secondary-font;
+            font-size: 12px;
+            padding: 20px 30px;
+            position: relative;
+            &:hover{
+                color: $primary-color;
+                transition: 0.5s;
+                .fa-plus{
+                    opacity: 0;
+                }
+                .fa-minus{
+                    opacity: 1;
+                }
+            }
+            .fas{
+                position: absolute;
+                left: 10px;
+            }
+
+            .fa-plus{
+                opacity: 1;
+            }
+
+            .fa-minus{
+                opacity: 0;
+            }
+         }
+     }
+}
+@media screen and (max-width:425px){
+    
+}
