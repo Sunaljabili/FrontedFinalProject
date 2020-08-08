@@ -1,7 +1,6 @@
 .dropdown-toggle::after{
     content: initial;
 }
-
 .navbar{
    background-color: $white-color;
     img{
@@ -17,7 +16,6 @@
                  margin-left: 18px;
                  color: #1b2024;
                  font-size: 15px;
-                //  margin-bottom: 5px;
              }
              .fa-search{
                  &:hover
@@ -26,7 +24,6 @@
                        transition: 0.5s;
                  }
              }
-
              sup{
                  background-color: red;
                  color: white;
@@ -76,18 +73,78 @@
                 padding: 10px 15px;
                
                 .layouts {
-
-                  
-                    
                     .portfolioss{
                         display: none;
                         position: absolute;
-                        top: 0px !important;
-                         left: 150px;
-                    
+                        top: 110px !important;
+                        left: 210px;
                 }
                 }
+                .single{
+
+                    .singles{
+                        display: none;
+                        position: absolute;
+                        top: 140px ;
+                        left: 210px;
+                    }
+
+                }
                     
+            }
+            .postsmenu{
+
+                .post{
+                    position: relative;
+                    .posts{
+                        display: none;
+                        position: absolute;
+                        top: 0px;
+                        left: 158px;
+                    }
+                }
+            }
+            .elements{
+               .classic{
+                   position: relative;
+
+                    .classics{
+                        position: absolute;
+                        top: 0px;
+                        left: 158px;
+                        display: none;
+            }
+               }
+               
+             .infografic{
+                 position: relative;
+                .infografics{
+                    position: absolute;
+                    top: 0px;
+                    left: 158px;
+                    display: none;
+                }
+             }
+             .interactive{
+                 position: relative;
+                 .interactives{
+                     position: absolute;
+                     top: 0px;
+                     left: 158px;
+                     display: none;
+
+                 }
+             }
+             .typografic{
+                 position: relative;
+                 .typografics{
+                     position: absolute;
+                    display: none;
+                     top: 0px;
+                     left: 157px;
+                 }
+             }
+
             }
         }
         
@@ -96,7 +153,6 @@
     width: 580px;
     height: 300px;
     text-align: center;
-    // margin-right:400px;
     .item{
         margin-left: 10px;
         font-family: "Playfair Display",serif;
@@ -138,7 +194,24 @@
     
 display: block !important;
 }
-
+.single:hover .singles{
+    display: block !important;
+}
+.post:hover .posts{
+    display: block !important;
+}
+.classic:hover .classics{
+    display: block !important;
+}
+.infografic:hover .infografics{
+    display: block !important;
+}
+.interactive:hover .interactives{
+    display: block !important;
+}
+.typografic:hover .typografics{
+    display: block !important;
+}
 .active{
     &::before{
         width: 100% !important;

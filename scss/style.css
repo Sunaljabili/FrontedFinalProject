@@ -168,8 +168,70 @@
 .navbar .navbar-nav .nav-item .dropdownmenus .layouts .portfolioss {
   display: none;
   position: absolute;
-  top: 0px !important;
-  left: 150px;
+  top: 110px !important;
+  left: 210px;
+}
+
+.navbar .navbar-nav .nav-item .dropdownmenus .single .singles {
+  display: none;
+  position: absolute;
+  top: 140px;
+  left: 210px;
+}
+
+.navbar .navbar-nav .nav-item .postsmenu .post {
+  position: relative;
+}
+
+.navbar .navbar-nav .nav-item .postsmenu .post .posts {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 158px;
+}
+
+.navbar .navbar-nav .nav-item .elements .classic {
+  position: relative;
+}
+
+.navbar .navbar-nav .nav-item .elements .classic .classics {
+  position: absolute;
+  top: 0px;
+  left: 158px;
+  display: none;
+}
+
+.navbar .navbar-nav .nav-item .elements .infografic {
+  position: relative;
+}
+
+.navbar .navbar-nav .nav-item .elements .infografic .infografics {
+  position: absolute;
+  top: 0px;
+  left: 158px;
+  display: none;
+}
+
+.navbar .navbar-nav .nav-item .elements .interactive {
+  position: relative;
+}
+
+.navbar .navbar-nav .nav-item .elements .interactive .interactives {
+  position: absolute;
+  top: 0px;
+  left: 158px;
+  display: none;
+}
+
+.navbar .navbar-nav .nav-item .elements .typografic {
+  position: relative;
+}
+
+.navbar .navbar-nav .nav-item .elements .typografic .typografics {
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: 157px;
 }
 
 .navbar .navbar-nav .shop {
@@ -215,6 +277,30 @@
 }
 
 .layouts:hover .portfolioss {
+  display: block !important;
+}
+
+.single:hover .singles {
+  display: block !important;
+}
+
+.post:hover .posts {
+  display: block !important;
+}
+
+.classic:hover .classics {
+  display: block !important;
+}
+
+.infografic:hover .infografics {
+  display: block !important;
+}
+
+.interactive:hover .interactives {
+  display: block !important;
+}
+
+.typografic:hover .typografics {
   display: block !important;
 }
 
@@ -896,10 +982,24 @@
 
 #fiorello .autoplayowlcarousel .item {
   cursor: pointer;
+  position: relative;
+}
+
+#fiorello .autoplayowlcarousel .item:hover .fab {
+  opacity: 1;
 }
 
 #fiorello .autoplayowlcarousel .item:focus {
   outline: none;
+}
+
+#fiorello .autoplayowlcarousel .item .fab {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  opacity: 0;
+  color: #f34f3f;
+  font-size: 30px;
 }
 
 #fiorello .autoplayowlcarousel .item img {
