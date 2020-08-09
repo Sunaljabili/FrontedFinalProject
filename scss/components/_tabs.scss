@@ -1,30 +1,13 @@
 #tabmenuversione{
     width: 100%;
     background-color:$white-color;
-    .menu{
-         .menu-items{
-             padding: 15px 45px;
-             line-height: 24px;
-             text-transform: uppercase;
-             color: #1b1b1b;
-            font-family: $secondary-font;
-            font-size: 12px;
-            font-weight: 500;
-            letter-spacing: .1em;
-            border: 1px solid gray;
-            cursor: pointer;
-            &:hover{
-                color: $primary-color;
-                transition: 0.5s;
-            }
-
-         }
-    }
+    @extend %menu;
     .body-tabs{
         
         .item{
             border: 1px solid gray;
             padding: 50px 30px;
+            display: none;
             p{
                 line-height: 1.6em;
                 font-family:$primary-fonts;
@@ -34,4 +17,77 @@
         }
     }
 
+}
+
+#onlytabs{
+    width: 100%;
+    .menu{
+        .menu-items{
+            padding: 15px 45px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: #1b1b1b;
+            font-family: $secondary-font;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: .1em;
+            cursor: pointer;
+            &:hover{
+               color: $primary-color;
+               transition: 0.5s;
+        }
+    
+    }}
+    .body-tabs{
+        .item{
+         
+            padding: 50px 30px;
+            display: none;
+            p{
+                line-height: 1.6em;
+                font-family:$primary-fonts;
+                color: $sub-text-color;
+                font-size: $sub-title-font-size;
+            }
+        }
+    }
+    
+}
+#rowtabs{
+    width: 100%;
+    .menu{
+        
+        .menu-items{
+            padding: 15px 45px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: #1b1b1b;
+            font-family: $secondary-font;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: .1em;
+            cursor: pointer;
+            &:hover{
+               color: $primary-color;
+               transition: 0.5s;
+        }
+    
+    }}
+    .body-tabs{
+        .item{
+            padding: 0px 10px;
+            display: none;
+            p{
+                line-height: 1.6em;
+                font-family:$primary-fonts;
+                color: $sub-text-color;
+                font-size: 15px;
+            }
+        }
+    }
+    
+}
+.activetab{
+    background-color: $primary-color !important;
+    color: white !important;
 }

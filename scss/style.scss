@@ -2,6 +2,7 @@
 @import "shared/variables";
 @import "shared/mixings";
 @import "shared/fonts";
+@import "shared/extends";
 
 // Components Scss
 @import "components/footer";
@@ -21,3 +22,4 @@
 // Accordion Page Sections Scss 
 @import "components/accordionspage";
 @import "components/tabs";
+@import "components/shoplist";

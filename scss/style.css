@@ -1,5 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400;1,500&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+#tabmenuversione .menu-items {
+  padding: 15px 45px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #1b1b1b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .1em;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+#tabmenuversione .menu-items:hover {
+  color: #f34f3f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 #footerpage {
   background-color: #fefaf3;
 }
@@ -1173,7 +1192,24 @@
   background-color: #ffffff;
 }
 
-#tabmenuversione .menu .menu-items {
+#tabmenuversione .body-tabs .item {
+  border: 1px solid gray;
+  padding: 50px 30px;
+  display: none;
+}
+
+#tabmenuversione .body-tabs .item p {
+  line-height: 1.6em;
+  font-family: "Lora", serif;
+  color: #8b8b8b;
+  font-size: 17px;
+}
+
+#onlytabs {
+  width: 100%;
+}
+
+#onlytabs .menu .menu-items {
   padding: 15px 45px;
   line-height: 24px;
   text-transform: uppercase;
@@ -1182,25 +1218,67 @@
   font-size: 12px;
   font-weight: 500;
   letter-spacing: .1em;
-  border: 1px solid gray;
   cursor: pointer;
 }
 
-#tabmenuversione .menu .menu-items:hover {
+#onlytabs .menu .menu-items:hover {
   color: #f34f3f;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-#tabmenuversione .body-tabs .item {
-  border: 1px solid gray;
+#onlytabs .body-tabs .item {
   padding: 50px 30px;
+  display: none;
 }
 
-#tabmenuversione .body-tabs .item p {
+#onlytabs .body-tabs .item p {
   line-height: 1.6em;
   font-family: "Lora", serif;
   color: #8b8b8b;
   font-size: 17px;
+}
+
+#rowtabs {
+  width: 100%;
+}
+
+#rowtabs .menu .menu-items {
+  padding: 15px 45px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #1b1b1b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .1em;
+  cursor: pointer;
+}
+
+#rowtabs .menu .menu-items:hover {
+  color: #f34f3f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#rowtabs .body-tabs .item {
+  padding: 0px 10px;
+  display: none;
+}
+
+#rowtabs .body-tabs .item p {
+  line-height: 1.6em;
+  font-family: "Lora", serif;
+  color: #8b8b8b;
+  font-size: 15px;
+}
+
+.activetab {
+  background-color: #f34f3f !important;
+  color: white !important;
+}
+
+#shop-cards {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

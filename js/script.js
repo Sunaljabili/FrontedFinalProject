@@ -60,29 +60,37 @@ $(document).ready(function () {
 
   });
 
-// Index Page End 
+  // Index Page End 
 
-// Accordions Page Start
+  // Accordions Page Start
 
   // Hover Accordion Version 1
   $(document).on("click", ".card-header", function () {
-      $(this).next().slideDown("fast", function () {
-        $(this).addClass("active")
-      });
-      $(".active").slideUp("fast", function () {
-        $(this).removeClass("active");
-      })
+    $(this).next().slideDown("fast", function () {
+      $(this).addClass("active")
+    });
+    $(this).parents(".accordionparent").find(".active").slideUp("fast", function () {
+      $(this).removeClass("active");
+    })
   })
 
-  // $(document).on("click", ".card-header", function () {
-  //   if ($(this).next()[0] != $("active")[0]) {
-  //     $(this).next().slideDown("fast", function () {
-  //       $(this).addClass("active")
-  //     });
-  //     $(".active").slideUp("fast", function () {
-  //       $(this).removeClass("active");
-  //     })
-  //   }
-  // })
+// Tabs Page
+  $(document).on("click", ".menu .menu-items ", function () {
+    let active = $(".activetab");
+    active.removeClass("activetab");
+    $(this).addClass("activetab");
+
+
+
+    let id = $(this).attr("data-id");
+    $(this).parents(".tabparent").find(".item").each(function () {
+      if ($(this).attr("data-id") == id) {
+        $(this).addClass("d-block")
+      } else {
+        $(this).removeClass("d-block")
+      }
+    })
+
+  })
 
 });
