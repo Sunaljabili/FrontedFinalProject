@@ -1048,7 +1048,7 @@
   color: #0e0e0e;
   font-size: 50px;
   line-height: 1.32em;
-  font-family: playfair display,serif;
+  font-family: "Playfair Display";
   font-weight: 400;
 }
 
@@ -1166,5 +1166,41 @@
 
 #accordionversiontwo .card .card-header .fa-minus {
   opacity: 0;
+}
+
+#tabmenuversione {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+#tabmenuversione .menu .menu-items {
+  padding: 15px 45px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #1b1b1b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .1em;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+#tabmenuversione .menu .menu-items:hover {
+  color: #f34f3f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#tabmenuversione .body-tabs .item {
+  border: 1px solid gray;
+  padding: 50px 30px;
+}
+
+#tabmenuversione .body-tabs .item p {
+  line-height: 1.6em;
+  font-family: "Lora", serif;
+  color: #8b8b8b;
+  font-size: 17px;
 }
 /*# sourceMappingURL=style.css.map */
