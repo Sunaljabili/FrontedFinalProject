@@ -1,0 +1,21 @@
+#shop-cards{
+    width: 100%;
+    .shopcard{
+        .new{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: $primary-color;
+            padding: 10px 20px;
+            color: white;
+            font-family: playfair display,serif;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 1px
+        }
+        .card-body{
+            position: relative;
+          
+        }
+    }
+}

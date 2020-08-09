@@ -1,0 +1,60 @@
+#progressbarhalf{
+width: 100%;
+    .progressbar{
+        height:auto;
+        margin:10px;
+        .count{
+            span{
+                color: #2b2b2b;
+                font-family: $playfair-font display;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 1.363em;
+            }
+            .approach-value{
+                float: right;
+            }
+        }
+      .gray{
+          background-color: #eee;
+        .approach-fill-val{
+            height:3px;
+            background-color: $primary-color;
+            width: 0% ;
+          }
+      }
+       
+      }
+}
+#progressbarall{
+    margin-top: 50px;
+    width: 100%;
+        .progressbar{
+            height:auto;
+            margin:10px;
+            .count{
+                span{
+                    color: #2b2b2b;
+                    font-family: $playfair-font display;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 1.363em;
+                }
+                .approach-value{
+                    float: right;
+                }
+            }
+          .gray{
+              background-color: black;
+            .approach-fill-val{
+                height:3px;
+                background-color: $primary-color;
+                width: 0% ;
+              }
+          }
+           
+          }
+    }
+
+
+

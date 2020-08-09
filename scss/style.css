@@ -1071,7 +1071,7 @@
   font-weight: 400;
 }
 
-.card-body {
+.accordionparent .card-body {
   display: none;
 }
 
@@ -1280,5 +1280,85 @@
 
 #shop-cards {
   width: 100%;
+}
+
+#shop-cards .shopcard .new {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #f34f3f;
+  padding: 10px 20px;
+  color: white;
+  font-family: playfair display,serif;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+}
+
+#shop-cards .shopcard .card-body {
+  position: relative;
+}
+
+#progressbarhalf {
+  width: 100%;
+}
+
+#progressbarhalf .progressbar {
+  height: auto;
+  margin: 10px;
+}
+
+#progressbarhalf .progressbar .count span {
+  color: #2b2b2b;
+  font-family: "Playfair Display" display;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.363em;
+}
+
+#progressbarhalf .progressbar .count .approach-value {
+  float: right;
+}
+
+#progressbarhalf .progressbar .gray {
+  background-color: #eee;
+}
+
+#progressbarhalf .progressbar .gray .approach-fill-val {
+  height: 3px;
+  background-color: #f34f3f;
+  width: 0%;
+}
+
+#progressbarall {
+  margin-top: 50px;
+  width: 100%;
+}
+
+#progressbarall .progressbar {
+  height: auto;
+  margin: 10px;
+}
+
+#progressbarall .progressbar .count span {
+  color: #2b2b2b;
+  font-family: "Playfair Display" display;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.363em;
+}
+
+#progressbarall .progressbar .count .approach-value {
+  float: right;
+}
+
+#progressbarall .progressbar .gray {
+  background-color: black;
+}
+
+#progressbarall .progressbar .gray .approach-fill-val {
+  height: 3px;
+  background-color: #f34f3f;
+  width: 0%;
 }
 /*# sourceMappingURL=style.css.map */

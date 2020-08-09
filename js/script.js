@@ -39,7 +39,7 @@ $(document).ready(function () {
       arrows: false,
     });
   }
-  // Sslick Plugin For Owl Carousel
+  // Slider Plugin
   $('.slider').slick({
     infinite: true,
     speed: 2000,
@@ -74,7 +74,7 @@ $(document).ready(function () {
     })
   })
 
-// Tabs Page
+  // Tabs Page
   $(document).on("click", ".menu .menu-items ", function () {
     let active = $(".activetab");
     active.removeClass("activetab");
@@ -93,4 +93,31 @@ $(document).ready(function () {
 
   })
 
+  $(window).scroll(function () {
+    var top_of_element = $(".progressbar").offset().top;
+    var bottom_of_element = $(".progressbar").offset().top + $(".progressbar").outerHeight();
+    var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+    var top_of_screen = $(window).scrollTop();
+    if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element))
+      ProgresBar();
+  })
+
+  function ProgresBar() {
+    $('.progressbar').each(function () {
+      var t = $(this);
+      var elem = t.attr('data-perc');
+      $(this).find(".approach-fill-val").animate({
+
+        width: elem + "%"
+      }, {
+        duration: 1500,
+        easing: 'linear',
+        step: function (now) {
+          t.find('.approach-value').text(Math.ceil(now) + '%')
+        }
+      });
+    })
+  }
+
+  ProgresBar();
 });
