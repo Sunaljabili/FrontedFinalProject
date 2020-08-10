@@ -1333,16 +1333,34 @@
   border: none;
 }
 
+#slickCard {
+  margin-top: 160px;
+  width: 100%;
+}
+
+#slickCard .multiple-items .slick-slide {
+  outline: none !important;
+}
+
 #slickCard .card {
+  width: 100%;
   overflow: hidden;
   border: none;
 }
 
-#slickCard .card:hover .card-text {
+#slickCard .card:hover .card-text .add-to-card {
+  opacity: 0;
+}
+
+#slickCard .card:hover .card-text .price {
+  opacity: 1;
+}
+
+#slickCard .card .card-text {
   position: relative;
 }
 
-#slickCard .card:hover .card-text h6 {
+#slickCard .card .card-text h6 {
   color: #1b1b1b;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
@@ -1352,7 +1370,7 @@
   text-transform: uppercase;
 }
 
-#slickCard .card:hover .card-text .txtcard {
+#slickCard .card .card-text .txtcard {
   position: absolute;
   color: #afafaf;
   font-size: 12px;
@@ -1360,38 +1378,72 @@
   line-height: 24px;
 }
 
-#slickCard .card:hover .card-text .add-to-card {
-  opacity: 0;
-  left: 78px;
-}
-
-#slickCard .card:hover .card-text .price {
-  left: 60px;
-  opacity: 1;
-  color: #afafaf;
-  font-size: 12px;
-  font-family: "Montserrat", sans-serif;
-  line-height: 24px;
-}
-
-#slickCard .card:hover .add-to-card {
+#slickCard .card .add-to-card {
   opacity: 1;
   -webkit-transition: 0.5;
   transition: 0.5;
   color: #f34f3f;
+  left: 78px;
 }
 
-#slickCard .card:hover .price {
+#slickCard .card .price {
   opacity: 0;
   -webkit-transition: 0.5;
   transition: 0.5;
+  color: #afafaf;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  color: #f34f3f;
+  line-height: 24px;
+  left: 60px;
 }
 
-#slickCard .card img:hover {
+#slickCard img:hover {
   -webkit-transform: scale(1.04);
           transform: scale(1.04);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+#smallsize-flowers .small-cards .img {
+  width: 100%;
+  overflow: hidden;
+}
+
+#smallsize-flowers .small-cards .img img {
+  width: 170px;
+  height: 170px;
+}
+
+#smallsize-flowers .small-cards .img img:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+#smallsize-flowers .small-cards .text {
+  text-align: center;
+  position: relative;
+}
+
+#smallsize-flowers .small-cards .text h6 {
+  margin-top: 10px;
+  color: #1b1b1b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 2em;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+#smallsize-flowers .small-cards .text span {
+  text-transform: lowercase;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: #afafaf;
 }
 
 #progressbarhalf {

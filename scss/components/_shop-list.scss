@@ -56,13 +56,33 @@
 }
 
 #slickCard{
+    margin-top: 160px;
+    width: 100%;
+
+    .multiple-items{
+        .slick-slide{
+            outline: none !important;
+        }
+    }
+  
     .card{
+       width: 100%;
         overflow: hidden;
         border: none;
- &:hover{
+       
+        &:hover{
+            .card-text{
+                .add-to-card{
+                    opacity:0 ;
+                }
+                .price{
+                opacity:1;
+                }
+            }
+        }
+ 
     .card-text{
         position: relative;
-       
        h6{
            color: #1b1b1b;
            font-family: $secondary-font;
@@ -81,30 +101,24 @@
            line-height: 24px;
        }
 
-       .add-to-card{
-            opacity:0 ;
-            left: 78px;
-
-       }
-
-       .price{
-           left:60px;
-           opacity:1;
-           color: #afafaf;
-           font-size: 12px;
-           font-family:$secondary-font;
-           line-height: 24px;
-       }
+      
 }
     .add-to-card{
         opacity: 1;
         transition: 0.5;
         color: $primary-color;
+        left: 78px;
         
     }
     .price{
         opacity: 0;
         transition: 0.5;
+        color: #afafaf;
+        font-size: 12px;
+        font-family:$secondary-font;
+        color: $primary-color;
+        line-height: 24px;
+        left:60px;
     }
  }
  img{
@@ -115,4 +129,47 @@
             }
          }
         }
+
+#smallsize-flowers{
+
+    .small-cards{
+
+        .img{
+            width: 100%;
+            overflow: hidden;
+            img{
+                width: 170px;
+                height: 170px;
+                &:hover{
+                    transition: 0.5s;
+                    transform: scale(1.09);
+                }
+              
+            }
+        }
+        .text{
+            // border: 1px solid black;
+            text-align: center;
+            position: relative;
+            h6{
+                margin-top: 10px;
+                color: #1b1b1b;
+                font-family: $secondary-font;
+                font-size: 12px;
+                line-height: 2em;
+                font-weight: 500;
+                letter-spacing: .1em;
+                text-transform: uppercase;
+            }
+            span{
+                text-transform: lowercase;
+                font-size: 12px;
+                font-weight: 400;
+                font-family: $secondary-font;
+                color: #afafaf;
+            }
+        }
+    }
 }
+
+

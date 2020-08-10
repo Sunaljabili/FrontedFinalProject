@@ -94,7 +94,7 @@ $(document).ready(function () {
   })
 
   // $(window).scroll(function () {
-  //   // var top_of_element = $(".progressbar").offset().top;
+  //   var top_of_element = $(".progressbar").offset().top;
   //   var bottom_of_element = $(".progressbar").offset().top + $(".progressbar").outerHeight();
   //   var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
   //   var top_of_screen = $(window).scrollTop();
@@ -120,4 +120,16 @@ $(document).ready(function () {
   }
 
   ProgresBar();
+
+  $('.multiple-items').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows:true,
+    autoplay:true,
+    prevArrow: '<i class="fal fa-long-arrow-left"></i>',
+    nextArrow: '<i class="fal fa-long-arrow-right"></i>',
+    // speed:1500,
+  });
+ 
 });
