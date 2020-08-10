@@ -67,11 +67,46 @@ background-color:white;
 
     
 
-        .card{
+    .card{
             overflow: hidden;
             border: none;
      &:hover{
+        .card-text{
+            position: relative;
+           
+           h6{
+               color: #1b1b1b;
+               font-family: $secondary-font;
+               font-size: 12px;
+               line-height: 32px;
+               font-weight: 500;
+               letter-spacing: .1em;
+               text-transform: uppercase;
+               }
 
+           .txtcard{
+               position: absolute;
+               color: #afafaf;
+               font-size: 12px;
+               font-family:$secondary-font;
+               line-height: 24px;
+           }
+
+           .add-to-card{
+                opacity:0 ;
+                left: 78px;
+
+           }
+
+           .price{
+               left:60px;
+               opacity:1;
+               color: #afafaf;
+               font-size: 12px;
+               font-family:$secondary-font;
+               line-height: 24px;
+           }
+}
         .add-to-card{
             opacity: 1;
             transition: 0.5;
@@ -83,7 +118,7 @@ background-color:white;
             transition: 0.5;
         }
      }
-             img{
+     img{
              
                 &:hover{
                     transform: scale(1.04);
@@ -91,44 +126,6 @@ background-color:white;
                 }
              }
             }
-             .card-text{
-                 position: relative;
-                
-                h6{
-                    color: #1b1b1b;
-                    font-family: $secondary-font;
-                    font-size: 12px;
-                    line-height: 32px;
-                    font-weight: 500;
-                    letter-spacing: .1em;
-                    text-transform: uppercase;
-                    }
-
-                .txtcard{
-                    position: absolute;
-                    color: #afafaf;
-                    font-size: 12px;
-                    font-family:$secondary-font;
-                    line-height: 24px;
-                }
-    
-                .add-to-card{
-                     opacity:0 ;
-                     left: 78px;
-
-                }
-    
-                .price{
-                    left:60px;
-                    opacity:1;
-                    color: #afafaf;
-                    font-size: 12px;
-                    font-family:$secondary-font;
-                    line-height: 24px;
-                }
-     }
-        
-    
    
 }
 .activeclr{

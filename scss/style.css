@@ -940,6 +940,42 @@
   border: none;
 }
 
+#selectflowers .card:hover .card-text {
+  position: relative;
+}
+
+#selectflowers .card:hover .card-text h6 {
+  color: #1b1b1b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 32px;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+#selectflowers .card:hover .card-text .txtcard {
+  position: absolute;
+  color: #afafaf;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+}
+
+#selectflowers .card:hover .card-text .add-to-card {
+  opacity: 0;
+  left: 78px;
+}
+
+#selectflowers .card:hover .card-text .price {
+  left: 60px;
+  opacity: 1;
+  color: #afafaf;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+}
+
 #selectflowers .card:hover .add-to-card {
   opacity: 1;
   -webkit-transition: 0.5;
@@ -958,42 +994,6 @@
           transform: scale(1.04);
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-
-#selectflowers .card-text {
-  position: relative;
-}
-
-#selectflowers .card-text h6 {
-  color: #1b1b1b;
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  line-height: 32px;
-  font-weight: 500;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-}
-
-#selectflowers .card-text .txtcard {
-  position: absolute;
-  color: #afafaf;
-  font-size: 12px;
-  font-family: "Montserrat", sans-serif;
-  line-height: 24px;
-}
-
-#selectflowers .card-text .add-to-card {
-  opacity: 0;
-  left: 78px;
-}
-
-#selectflowers .card-text .price {
-  left: 60px;
-  opacity: 1;
-  color: #afafaf;
-  font-size: 12px;
-  font-family: "Montserrat", sans-serif;
-  line-height: 24px;
 }
 
 .activeclr {
@@ -1282,21 +1282,116 @@
   width: 100%;
 }
 
-#shop-cards .shopcard .new {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background-color: #f34f3f;
-  padding: 10px 20px;
-  color: white;
-  font-family: playfair display,serif;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 1px;
+#shop-cards .product-item {
+  position: relative;
 }
 
-#shop-cards .shopcard .card-body {
+#shop-cards .product-item .new {
+  background-color: #f34f3f;
+  color: white;
+  padding: 5px 15px;
+  z-index: 999;
+  position: absolute;
+  top: 10px;
+  left: 9px;
+}
+
+#shop-cards .product-item:hover .opacityhover {
+  opacity: 1 !important;
+  background-color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#shop-cards .product-item .opacityhover {
+  cursor: pointer;
+  position: absolute;
+  top: 92px;
+  left: 45px;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#shop-cards .product-item .opacityhover .text h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#shop-cards .product-item .opacityhover .price span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#shop-cards .product-item .opacityhover .button .btn {
+  padding: 13px 42px;
+  white-space: nowrap;
+  z-index: 3;
+  background-color: #f34f3f !important;
+  border: none;
+}
+
+#slickCard .card {
+  overflow: hidden;
+  border: none;
+}
+
+#slickCard .card:hover .card-text {
   position: relative;
+}
+
+#slickCard .card:hover .card-text h6 {
+  color: #1b1b1b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 32px;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+#slickCard .card:hover .card-text .txtcard {
+  position: absolute;
+  color: #afafaf;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+}
+
+#slickCard .card:hover .card-text .add-to-card {
+  opacity: 0;
+  left: 78px;
+}
+
+#slickCard .card:hover .card-text .price {
+  left: 60px;
+  opacity: 1;
+  color: #afafaf;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+}
+
+#slickCard .card:hover .add-to-card {
+  opacity: 1;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+  color: #f34f3f;
+}
+
+#slickCard .card:hover .price {
+  opacity: 0;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+#slickCard .card img:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #progressbarhalf {

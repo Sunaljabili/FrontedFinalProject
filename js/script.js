@@ -93,14 +93,14 @@ $(document).ready(function () {
 
   })
 
-  $(window).scroll(function () {
-    var top_of_element = $(".progressbar").offset().top;
-    var bottom_of_element = $(".progressbar").offset().top + $(".progressbar").outerHeight();
-    var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-    var top_of_screen = $(window).scrollTop();
-    if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element))
-      ProgresBar();
-  })
+  // $(window).scroll(function () {
+  //   // var top_of_element = $(".progressbar").offset().top;
+  //   var bottom_of_element = $(".progressbar").offset().top + $(".progressbar").outerHeight();
+  //   var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+  //   var top_of_screen = $(window).scrollTop();
+  //   if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element))
+  //     ProgresBar();
+  // })
 
   function ProgresBar() {
     $('.progressbar').each(function () {
