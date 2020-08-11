@@ -1,0 +1,70 @@
+#slickCard{
+    margin-top: 160px;
+    width: 100%;
+  
+    .card{
+       width: 100%;
+        overflow: hidden;
+        border: none;
+             img{
+                 width: 100%;
+             }
+        &:hover{
+            .card-text{
+                .add-to-card{
+                    opacity:0 ;
+                }
+                .price{
+                opacity:1;
+                }
+            }
+        }
+ 
+    .card-text{
+        position: relative;
+       h6{
+           color: #1b1b1b;
+           font-family: $secondary-font;
+           font-size: 12px;
+           line-height: 32px;
+           font-weight: 500;
+           letter-spacing: .1em;
+           text-transform: uppercase;
+           }
+
+       .txtcard{
+           position: absolute;
+           color: #afafaf;
+           font-size: 12px;
+           font-family:$secondary-font;
+           line-height: 24px;
+       }
+
+      
+}
+    .add-to-card{
+        opacity: 1;
+        transition: 0.5;
+        color: $primary-color;
+        left: 78px;
+        
+    }
+    .price{
+        opacity: 0;
+        transition: 0.5;
+        color: #afafaf;
+        font-size: 12px;
+        font-family:$secondary-font;
+        color: $primary-color;
+        line-height: 24px;
+        left:60px;
+    }
+ }
+ img{
+         
+            &:hover{
+                transform: scale(1.04);
+                transition: 0.5s;
+            }
+         }
+        }

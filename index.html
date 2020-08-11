@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap Css Links -->
+    <link rel="icon" href="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/cropped-Favicon-32x32.png"
+        sizes="32x32">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
         integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous" />
     <!-- Slick Css -->
@@ -331,176 +333,199 @@
         <section id="selectflowers">
             <div class="container">
                 <div class=" d-flex flex-wrap mt-3">
-                    <div class="col-lg-8 col-sm-8 col-md-8 col-8">
-                        <div class="flowersname">
-                            <ul class="d-flex flex-wrap">
-                                <li>
-                                    <a href="#" class="activeclr">All</a>
-                                </li>
-                                <li>
-                                    <a href="#">Popular</a>
-                                </li>
-                                <li>
-                                    <a href="#">WINTER</a>
-                                </li>
-                                <li>
-                                    <a href="#">VARIOUS</a>
-                                </li>
-                                <li>
-                                    <a href="#">EXOTIC</a>
-                                </li>
-                                <li>
-                                    <a href="#">GREENS</a>
-                                </li>
-                                <li>
-                                    <a href="#">CACTUSES</a>
-                                </li>
-                            </ul>
+                    <div class="col-lg-8 col-md-12 col-sm-12">
+                        <div id="myBtnContainer">
+                            <button class="btn " onclick="filterSelection('all')"> ALL</button>
+                            <button class="btn" onclick="filterSelection('popular')"> POPULAR</button>
+                            <button class="btn" onclick="filterSelection('winter')"> WINTER</button>
+                            <button class="btn" onclick="filterSelection('various')"> VARIOUS</button>
+                            <button class="btn" onclick="filterSelection('exotic')"> EXOTIC</button>
+                            <button class="btn" onclick="filterSelection('green')"> GREEN</button>
+                            <button class="btn" onclick="filterSelection('cactuses')"> CACTUSES</button>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                         <div class="dropdown drpdwn">
-                            <button class="btn btnfltr btn-light dropdown-toggle " type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Filter <i class="fas fa-caret-down"></i>
-                            </button>
-                            <div class="drpdwnhover">
-                                <div class="dropdown-menu  menudrp" aria-labelledby="dropdownMenuButton">
-                                    <div class="d-flex flex-wrap">
-                                        <div class="col-lg-6">
-                                            <h6>Sort By</h6>
-                                            <a class="dropdown-item" href="#">Default</a>
-                                            <a class="dropdown-item" href="#"> Popularity</a>
-                                            <a class="dropdown-item" href="#"> Newness</a>
-                                            <a class="dropdown-item" href="#">Price: Low To High</a>
-                                            <a class="dropdown-item" href="#"> Price: High To Low</a>
+                          <button class="btn btnfltr btn-light dropdown-toggle " type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Filter <i class="fas fa-caret-down"></i>
+                          </button>
+                          <div class="drpdwnhover">
+                            <div class="dropdown-menu  menudrp" aria-labelledby="dropdownMenuButton">
+                              <div class="d-flex flex-wrap">
+                                <div class="col-lg-6">
+                                  <h6>Sort By</h6>
+                                  <a class="dropdown-item" href="#">Default</a>
+                                  <a class="dropdown-item" href="#"> Popularity</a>
+                                  <a class="dropdown-item" href="#"> Newness</a>
+                                  <a class="dropdown-item" href="#">Price: Low To High</a>
+                                  <a class="dropdown-item" href="#"> Price: High To Low</a>
+                                </div>
+                                <div class="col-lg-6">
+                                  <h6>Price Range</h6>
+                                  <a class="dropdown-item" href="#"> All</a>
+                                  <a class="dropdown-item" href="#">$0-$10</a>
+                                  <a class="dropdown-item" href="#">$10-$20</a>
+                                  <a class="dropdown-item" href="#">$20-$30</a>
+                                  <a class="dropdown-item" href="#">$30-$40</a>
+                                  <a class="dropdown-item" href="#">40$+</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="main">
+                        <!-- Portfolio Gallery Grid -->
+                        <div class="d-flex flex-wrap">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                <div class="column popular winter green">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="img/shop-14-img.jpg">
                                         </div>
-                                        <div class="col-lg-6">
-                                            <h6>Price Range</h6>
-                                            <a class="dropdown-item" href="#"> All</a>
-                                            <a class="dropdown-item" href="#">$0-$10</a>
-                                            <a class="dropdown-item" href="#">$10-$20</a>
-                                            <a class="dropdown-item" href="#">$20-$30</a>
-                                            <a class="dropdown-item" href="#">$30-$40</a>
-                                            <a class="dropdown-item" href="#">40$+</a>
+                                        <div class="text text-center">
+                                            <h4>MAJESTY PALM</h4>
+                                            <p class="add-cart txt">Add to cart</p>
+                                            <p class="price txt">$259 </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                <div class="column popular winter">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="img/shop-13-img.jpg">
+                                        </div>
+                                        <div class="text text-center">
+                                            <h4>MAJESTY PALM</h4>
+                                            <p class="add-cart txt">Add to cart</p>
+                                            <p class="price txt">$259 </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex flex-wrap">
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                        <div class="card" style="width: 15rem;">
-                            <img src="img/shop-14-img.jpg" class="card-img-top" alt="...">
-                            <div class="card-body text-center card-text">
-                                <h6>MAJESTY PALM</h6>
-                                <div class="add-to-card txtcard">
-                                    <span>Add to Cart</span>
-                                </div>
-                                <div class="price">
-                                    <span> $259</span>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                <div class="column popular winter">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="img/shop-10-img.jpg">
+                                        </div>
+                                        <div class="text text-center">
+                                            <h4>MAJESTY PALM</h4>
+                                            <p class="add-cart txt">Add to cart</p>
+                                            <p class="price txt">$259 </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                        <div class="card" style="width: 15rem;">
-                            <img src="img/shop-13-img.jpg" class="card-img-top" alt="...">
-                            <div class="card-body text-center card-text">
-                                <h6>MAJESTY PALM</h6>
-                                <div class="add-to-card txtcard">
-                                    <span>Add to Cart</span>
-                                </div>
-                                <div class="price">
-                                    <span> $259</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                        <div class="card" style="width: 15rem;">
-                            <img src="img/shop-10-img.jpg" class="card-img-top" alt="...">
-                            <div class="card-body text-center card-text">
-                                <h6>MAJESTY PALM</h6>
-                                <div class="add-to-card txtcard">
-                                    <span>Add to Cart</span>
-                                </div>
-                                <div class="price">
-                                    <span> $259</span>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                <div class="column popular green">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="img/shop-11-img.jpg">
+                                        </div>
+                                        <div class="text text-center">
+                                            <h4>MAJESTY PALM</h4>
+                                            <p class="add-cart txt">Add to cart</p>
+                                            <p class="price txt">$259 </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                        <div class="card" style="width: 15rem;">
-                            <img src="img/shop-11-img.jpg" class="card-img-top" alt="...">
-                            <div class="card-body text-center card-text">
-                                <h6>MAJESTY PALM</h6>
-                                <div class="add-to-card txtcard">
-                                    <span>Add to Cart</span>
-                                </div>
-                                <div class="price">
-                                    <span> $259</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                        <div class="card" style="width: 15rem;">
-                            <img src="img/shop-12-img.jpg" class="card-img-top" alt="...">
-                            <div class="card-body text-center card-text">
-                                <h6>MAJESTY PALM</h6>
-                                <div class="add-to-card txtcard">
-                                    <span>Add to Cart</span>
-                                </div>
-                                <div class="price">
-                                    <span> $259</span>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                <div class="column popular various cactuses exotic">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="img/shop-12-img.jpg">
+                                        </div>
+                                        <div class="text text-center">
+                                            <h4>MAJESTY PALM</h4>
+                                            <p class="add-cart txt">Add to cart</p>
+                                            <p class="price txt">$259 </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                        <div class="card" style="width: 15rem;">
-                            <img src="img/shop-9-img.jpg" class="card-img-top" alt="...">
-                            <div class="card-body text-center card-text">
-                                <h6>MAJESTY PALM</h6>
-                                <div class="add-to-card txtcard">
-                                    <span>Add to Cart</span>
-                                </div>
-                                <div class="price">
-                                    <span> $259</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                        <div class="card" style="width: 15rem;">
-                            <img src="img/shop-8-img.jpg" class="card-img-top" alt="...">
-                            <div class="card-body text-center card-text">
-                                <h6>MAJESTY PALM</h6>
-                                <div class="add-to-card txtcard">
-                                    <span>Add to Cart</span>
-                                </div>
-                                <div class="price">
-                                    <span> $259</span>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                <div class="column various cactuses">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="img/shop-9-img.jpg">
+                                        </div>
+                                        <div class="text text-center">
+                                            <h4>MAJESTY PALM</h4>
+                                            <p class="add-cart txt">Add to cart</p>
+                                            <p class="price txt">$259 </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                        <div class="card" style="width: 15rem;">
-                            <img src="img/shop-7-img.jpg" class="card-img-top" alt="...">
-                            <div class="card-body text-center card-text">
-                                <h6>MAJESTY PALM</h6>
-                                <div class="add-to-card txtcard">
-                                    <span>Add to Cart</span>
-                                </div>
-                                <div class="price">
-                                    <span> $259</span>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                <div class="column various  ">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="img/shop-8-img.jpg">
+                                        </div>
+                                        <div class="text text-center">
+                                            <h4>MAJESTY PALM</h4>
+                                            <p class="add-cart txt">Add to cart</p>
+                                            <p class="price txt">$259 </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                <div class="column various exotic">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="img/shop-7-img.jpg">
+                                        </div>
+                                        <div class="text text-center">
+                                            <h4>MAJESTY PALM</h4>
+                                            <p class="add-cart txt">Add to cart</p>
+                                            <p class="price txt">$259 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-3">
+                                <div class="column various">
+                                    <div class="content">
+                                        <img src="img/shop-3-img.jpg">
+                                        <div class="text text-center">
+                                            <h4>Mountains</h4>
+                                            <p>Lorem ipsum dolor..</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="column various">
+                                    <div class="content">
+                                        <img src="img/shop-5-img.jpg">
+                                        <div class="text text-center">
+                                            <h4>Mountains</h4>
+                                            <p>Lorem ipsum dolor..</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="column various">
+                                    <div class="content">
+                                        <img src="img/shop-6-img.jpg">
+                                        <div class="text text-center">
+                                            <h4>Mountains</h4>
+                                            <p>Lorem ipsum dolor..</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+
+
                         </div>
                     </div>
                 </div>

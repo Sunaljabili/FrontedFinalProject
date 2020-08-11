@@ -62,6 +62,7 @@
     .multiple-items{
         .slick-slide{
             outline: none !important;
+            width: 100%;
         }
     }
   
@@ -69,7 +70,9 @@
        width: 100%;
         overflow: hidden;
         border: none;
-       
+             img{
+                 width: 100%;
+             }
         &:hover{
             .card-text{
                 .add-to-card{
@@ -129,6 +132,7 @@
             }
          }
         }
+
 
 #smallsize-flowers{
 

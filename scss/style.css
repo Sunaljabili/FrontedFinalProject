@@ -863,135 +863,133 @@
 }
 
 #selectflowers {
-  width: 100%;
-  background-color: white;
+  /* Center website */
+  /* Add padding BETWEEN each column (if you want) */
+  /* Create three equal columns that floats next to each other */
+  /* Clear floats after rows */
+  /* Content */
+  /* The "show" class is added to the filtered elements */
+  /* Style the buttons */
+  /* Add a grey background color on mouse-over */
+  /* Add a dark background color to the active button */
 }
 
-#selectflowers .flowersname ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style-type: none;
+#selectflowers .main {
+  margin: auto;
 }
 
-#selectflowers .flowersname ul li {
-  padding: 10px;
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 12px;
-  letter-spacing: .1em;
-  font-weight: 500;
-  text-transform: uppercase;
+#selectflowers h1 {
+  font-size: 50px;
+  word-break: break-all;
 }
 
-#selectflowers .flowersname ul li a {
-  text-decoration: none;
-  color: black;
-  font-size: 12px;
-  letter-spacing: .1em;
-  font-weight: 500;
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-}
-
-#selectflowers .flowersname ul li a:hover {
-  color: #f34f3f;
-  -webkit-transition: 0.5;
-  transition: 0.5;
-}
-
-#selectflowers .drpdwn .btnfltr {
-  color: black !important;
-  margin-left: 150px;
-}
-
-#selectflowers .drpdwn .drpdwnhover {
-  width: 100%;
-  position: relative;
-}
-
-#selectflowers .drpdwn .drpdwnhover .menudrp {
+#selectflowers .column {
+  display: none;
+  /* Hide columns by default */
   width: 100%;
 }
 
-#selectflowers .drpdwn .drpdwnhover .menudrp h6 {
-  text-align: center;
-  font-size: 22px;
-  line-height: 1.363em;
-  color: #2b2b2b;
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
+#selectflowers .column:hover .text .add-cart {
+  opacity: 0 !important;
+  -webkit-transition: 0.5s !important;
+  transition: 0.5s !important;
 }
 
-#selectflowers .drpdwn .drpdwnhover .menudrp a {
-  font-size: 13px;
-  text-transform: capitalize;
-  font-weight: 500;
-  color: #8b8b8b;
-  font-family: "Montserrat", sans-serif;
+#selectflowers .column:hover .text .price {
+  opacity: 1 !important;
+  -webkit-transition: 0.5s !important;
+  transition: 0.5s !important;
+  color: #f34f3f !important;
 }
 
-#selectflowers .drpdwn .drpdwnhover .menudrp a:hover {
-  color: black;
+#selectflowers .column .content {
+  width: 100%;
 }
 
-#selectflowers .card {
+#selectflowers .column .content .img {
   overflow: hidden;
-  border: none;
+  width: 250px;
 }
 
-#selectflowers .card:hover .card-text {
+#selectflowers .column .content .img img {
+  width: 250px;
+  height: 310px;
+}
+
+#selectflowers .column .content .img img:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+
+#selectflowers .column .content .text {
   position: relative;
 }
 
-#selectflowers .card:hover .card-text h6 {
+#selectflowers .column .content .text h4 {
   color: #1b1b1b;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
-  line-height: 32px;
+  line-height: 2em;
   font-weight: 500;
   letter-spacing: .1em;
   text-transform: uppercase;
 }
 
-#selectflowers .card:hover .card-text .txtcard {
+#selectflowers .column .content .text .txt {
   position: absolute;
   color: #afafaf;
   font-size: 12px;
+  text-align: center;
   font-family: "Montserrat", sans-serif;
-  line-height: 24px;
-}
-
-#selectflowers .card:hover .card-text .add-to-card {
-  opacity: 0;
-  left: 78px;
-}
-
-#selectflowers .card:hover .card-text .price {
+  line-height: 2em;
+  font-weight: 500;
+  letter-spacing: .1em;
   left: 60px;
-  opacity: 1;
-  color: #afafaf;
-  font-size: 12px;
-  font-family: "Montserrat", sans-serif;
-  line-height: 24px;
 }
 
-#selectflowers .card:hover .add-to-card {
+#selectflowers .column .content .text .add-cart {
   opacity: 1;
-  -webkit-transition: 0.5;
-  transition: 0.5;
-  color: #f34f3f;
 }
 
-#selectflowers .card:hover .price {
+#selectflowers .column .content .text .price {
+  left: 80px;
   opacity: 0;
-  -webkit-transition: 0.5;
-  transition: 0.5;
 }
 
-#selectflowers .card img:hover {
-  -webkit-transform: scale(1.04);
-          transform: scale(1.04);
+#selectflowers .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#selectflowers .content {
+  background-color: white;
+  padding: 10px;
+}
+
+#selectflowers .show {
+  display: block;
+}
+
+#selectflowers .btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+#selectflowers .btn:hover {
+  color: #f34f3f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#selectflowers .btn.active {
+  background-color: #f34f3f;
+  color: white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -1340,12 +1338,17 @@
 
 #slickCard .multiple-items .slick-slide {
   outline: none !important;
+  width: 100%;
 }
 
 #slickCard .card {
   width: 100%;
   overflow: hidden;
   border: none;
+}
+
+#slickCard .card img {
+  width: 100%;
 }
 
 #slickCard .card:hover .card-text .add-to-card {
@@ -1507,5 +1510,77 @@
   height: 3px;
   background-color: #f34f3f;
   width: 0%;
+}
+
+#slickCard {
+  margin-top: 160px;
+  width: 100%;
+}
+
+#slickCard .card {
+  width: 100%;
+  overflow: hidden;
+  border: none;
+}
+
+#slickCard .card img {
+  width: 100%;
+}
+
+#slickCard .card:hover .card-text .add-to-card {
+  opacity: 0;
+}
+
+#slickCard .card:hover .card-text .price {
+  opacity: 1;
+}
+
+#slickCard .card .card-text {
+  position: relative;
+}
+
+#slickCard .card .card-text h6 {
+  color: #1b1b1b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 32px;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+#slickCard .card .card-text .txtcard {
+  position: absolute;
+  color: #afafaf;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+}
+
+#slickCard .card .add-to-card {
+  opacity: 1;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+  color: #f34f3f;
+  left: 78px;
+}
+
+#slickCard .card .price {
+  opacity: 0;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+  color: #afafaf;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  color: #f34f3f;
+  line-height: 24px;
+  left: 60px;
+}
+
+#slickCard img:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 /*# sourceMappingURL=style.css.map */

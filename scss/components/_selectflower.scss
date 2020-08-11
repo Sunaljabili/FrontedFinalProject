@@ -1,132 +1,167 @@
 #selectflowers{
-width: 100%;
-background-color:white;
-    .flowersname{
-        ul{
-            display: flex;
-            list-style-type: none;
-            li{
-              padding: 10px;
-              display: inline-block;
-              vertical-align: middle;
-              font-size: 12px;
-              letter-spacing: .1em;
-              font-weight: 500;
-              text-transform: uppercase;
-                a{
-                    text-decoration: none;
-                    color: $primary-black-color;
-                    font-size: 12px;
-                    letter-spacing: .1em;
-                    font-weight: 500;
-                    text-transform: uppercase;
-                    font-family: $secondary-font;
-                    &:hover{
-                        color: $primary-color;
-                        transition: 0.5;
-                    }
-                }
+
+    
+    // .drpdwn{
+    //     .btnfltr{
+    //         color: black !important;
+    //         margin-left: 150px;
+    //     }
+    //     .drpdwnhover{
+    //         width: 100%;
+    //          position: relative;
+    //         .menudrp{
+    //             width: 100%;
+    //           h6{
+    //               text-align: center;
+    //               font-size: 22px;
+    //               line-height: 1.363em;
+    //               color: #2b2b2b;
+    //               font-family:$playfair-font,serif;
+    //               font-weight: 400;
+    //           }
+    //           a{
+    //             font-size: 13px;
+    //             text-transform: capitalize;
+    //             font-weight: 500;
+    //             color: $sub-text-color;
+    //             font-family: $secondary-font;
+
+    //             &:hover{
+    //                 color: black;
+    //             }
+    //           }
+    //         }
+    //     }
+        
+    // }
+  /* Center website */
+  .main {
+    // max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+//   .row {
+//     margin: 8px -16px;
+//   }
+  
+  /* Add padding BETWEEN each column (if you want) */
+//   .row,
+//   .row > .column {
+//     padding: 8px;
+//   }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    display: none; /* Hide columns by default */
+    width: 100%;
+      &:hover{
+          .text{
+
+            .add-cart{
+                opacity: 0 !important;
+                transition: 0.5s !important;
+            }
+            .price{
+                opacity: 1 !important;
+                transition: 0.5s !important;
+                color: $primary-color !important;
+            }
+
+          }
+      }
+    .content{
+        width: 100%;
+       
+        .img{
+            overflow: hidden;
+            width: 250px;
+            img{
+                width: 250px;
+                height: 310px;
+                &:hover{
+                    transition: 0.5s;
+                    transform: scale(1.08);
+   
+                   }
             }
         }
-
-    }
-
-    .drpdwn{
-        .btnfltr{
-            color: black !important;
-            margin-left: 150px;
-        }
-        .drpdwnhover{
-            width: 100%;
-             position: relative;
-            .menudrp{
-                width: 100%;
-              h6{
-                  text-align: center;
-                  font-size: 22px;
-                  line-height: 1.363em;
-                  color: #2b2b2b;
-                  font-family:$playfair-font,serif;
-                  font-weight: 400;
-              }
-              a{
-                font-size: 13px;
-                text-transform: capitalize;
-                font-weight: 500;
-                color: $sub-text-color;
+        .text{
+            position: relative;
+            h4{color: #1b1b1b;
                 font-family: $secondary-font;
-
-                &:hover{
-                    color: black;
-                }
-              }
+                font-size: 12px;
+                line-height: 2em;
+                font-weight: 500;
+                letter-spacing: .1em;
+                text-transform: uppercase;
+            }
+            .txt{
+                position: absolute;
+                color: #afafaf;
+                font-size: 12px;
+                text-align: center;
+                font-family: $secondary-font;
+                line-height: 2em;
+                font-weight: 500;
+                letter-spacing: .1em;
+                left: 60px;
+            }
+            .add-cart{
+            opacity: 1;
+            }
+            .price{
+             left: 80px;
+             opacity: 0;
             }
         }
         
     }
+  }
 
-    
-
-    .card{
-            overflow: hidden;
-            border: none;
-     &:hover{
-        .card-text{
-            position: relative;
-           
-           h6{
-               color: #1b1b1b;
-               font-family: $secondary-font;
-               font-size: 12px;
-               line-height: 32px;
-               font-weight: 500;
-               letter-spacing: .1em;
-               text-transform: uppercase;
-               }
-
-           .txtcard{
-               position: absolute;
-               color: #afafaf;
-               font-size: 12px;
-               font-family:$secondary-font;
-               line-height: 24px;
-           }
-
-           .add-to-card{
-                opacity:0 ;
-                left: 78px;
-
-           }
-
-           .price{
-               left:60px;
-               opacity:1;
-               color: #afafaf;
-               font-size: 12px;
-               font-family:$secondary-font;
-               line-height: 24px;
-           }
-}
-        .add-to-card{
-            opacity: 1;
-            transition: 0.5;
-            color: $primary-color;
-            
-        }
-        .price{
-            opacity: 0;
-            transition: 0.5;
-        }
-     }
-     img{
-             
-                &:hover{
-                    transform: scale(1.04);
-                    transition: 0.5s;
-                }
-             }
-            }
-   
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .btn:hover {
+    color:$primary-color;
+    transition: 0.5s;
+  }
+  
+  /* Add a dark background color to the active button */
+  .btn.active {
+    background-color:$primary-color;
+     color: white;
+     transition: 0.5s;
+  }
 }
 .activeclr{
     color: $primary-color !important;
