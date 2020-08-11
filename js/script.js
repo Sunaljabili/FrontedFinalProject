@@ -152,6 +152,9 @@ $(document).ready(function () {
     ]});
  
 });
+
+// Index Page Filter Plugin
+
 filterSelection("all") // Execute the function and show all columns
 function filterSelection(c) {
   var x, i;
@@ -189,13 +192,63 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
+
+// Product-List Page Slider 
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+
+  var img=document.getElementsByClassName("img");
+  img.AddEventListener("click",function(){
+    moda
+  })
+}
+
+var counter = function () {
+  var count = 0;
+  var template = `
+    <div class="counter">
+      <input type="button" class="minus" value="<"/>
+      <span class="count">${count}</span>
+      <input type="button" class="plus" value=">"/>
+    </div>
+  `;
+  var el = $(template);
+  var countEl = el.find(".count");
+
+  el.find(".minus").click(function () {
+    count = count - 1;
+    countEl.html(count);
+  });
+
+  el.find(".plus").click(function () {
+    count = count + 1;
+    countEl.html(count);
+  });
+  return el;
+};
+
+$("#counter1").append(counter());
+

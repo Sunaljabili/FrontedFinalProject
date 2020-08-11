@@ -8,7 +8,7 @@
          font-size: 12px;
          font-weight: 500;
          letter-spacing: .1em;
-         border: 1px solid gray;
+         border: 1px solid #cccccc;
          cursor: pointer;
          &:hover{
             color: $primary-color;
@@ -17,4 +17,5 @@
 
      }
 }
+
 

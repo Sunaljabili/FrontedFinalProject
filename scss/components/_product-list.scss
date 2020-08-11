@@ -68,3 +68,262 @@
             }
          }
         }
+#orangeamarylills{
+  .column{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.9;
+    cursor: pointer;
+    width: 150px;
+    height: 100px;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  /* Expanding image text */
+  .img{
+    width: 100%;
+   
+    
+  }
+  .img img{
+    width: 100%;
+    height: 420px;
+    // margin-left: 20px;
+  }
+  /* Closable button inside the image */
+  * {box-sizing:border-box}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  .mySlides img{
+    width: 100%;
+    height: 450px;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color  ease;
+  }
+  
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 5s;
+    animation-name: fade;
+    animation-duration: 5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  .orange-text{
+   
+    h2{
+      font-size: 38px;
+      line-height: 1.447em;
+      margin:5px 40px;
+      color: #2b2b2b;
+      font-family: $playfair-font;
+      font-weight: 400;
+    }
+
+    span{
+      
+      line-height: 1;
+    color: #afafaf;
+    font-family:$secondary-font;
+    font-size: 17px;
+    margin:8px 40px;
+    }
+
+    p{
+      font-family:$primary-fonts;
+      color: #a1a09f;
+       font-size: 15px;
+      margin:10px 40px;
+      line-height: 24px;
+    }
+  }
+  .counter-button{
+    width: 100%;
+    padding: 10px 40px;
+    span{
+      font-size: 15px;
+      border: 1px solid #afafaf;
+      padding:14px;
+      justify-content: center;
+      font-family:$playfair-font;
+      color: #999;
+      text-align: center;
+
+    }
+    #counter1{
+    padding: 0 20px;
+    margin-top: 10px;
+    .counter{
+        input{
+          overflow: visible;
+          padding: 10px;
+          margin-top: -7px;
+      }
+        }
+    }
+    .blackbtn{
+      padding: 0 20px;
+      background-color: #080808;
+    }
+    }
+    .sku-categories{
+      padding: 0px 45px;
+      p{
+        display: block;
+        margin: 0 0 7px;
+        color: #2b2b2b;
+        margin-top: 15px;
+        font-weight: 500;
+        font-size: 12px;
+        font-family:$secondary-font;
+        span{
+          color: #8b8b8b;
+          font-size: 12px;
+          font-weight: 500;
+          &:hover{
+            color: $primary-color;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+
+  }
+
+  #onlytabs{
+    width: 100%;
+   @extend %menu;
+   .body-tabs{
+    .item{
+      width: 100%;
+        padding: 50px 30px;
+        display: none;
+        h3{
+          font-size: 30px;
+          line-height: 26px;
+          color: #2b2b2b;
+          font-family: $playfair-font;
+          font-weight: 400;
+        }
+        p{
+            line-height: 1.6em;
+            font-family:$primary-fonts;
+            color: $sub-text-color;
+            font-size: $sub-title-font-size;
+        }
+        .item{
+          .info{
+            p{
+              color: #2b2b2b !important;
+              display: inline-block;
+              padding: 0 10px 0 0;
+              font-size: 12px;
+              font-family: $secondary-font;
+              line-height: 24px;
+              span{
+                color: #cccccc ;
+            }
+            }
+         
+            
+        }
+        
+        }
+
+        .item{
+          .img-comment{
+            position: relative;
+            p{
+              position: absolute;
+            
+             
+            }
+           
+          }
+
+        }
+    }
+   }
+  }
