@@ -1,5 +1,5 @@
 #slickCard{
-    margin-top: 160px;
+    margin-top: 100px;
     width: 100%;
   
     .card{
@@ -122,7 +122,6 @@
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
     font-weight: bold;
     font-size: 18px;
     transition: 6s ease;
@@ -177,9 +176,10 @@
   /* Fading animation */
   .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 5s;
+    -webkit-animation-duration: 2s;
     animation-name: fade;
-    animation-duration: 5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
   }
   
   @-webkit-keyframes fade {
@@ -224,7 +224,6 @@
     padding: 10px 40px;
     span{
       font-size: 15px;
-      border: 1px solid #afafaf;
       padding:14px;
       justify-content: center;
       font-family:$playfair-font;
@@ -243,9 +242,13 @@
       }
         }
     }
-    .blackbtn{
-      padding: 0 20px;
+    .blackbtn{  
+        padding: 0 20px;
       background-color: #080808;
+      width: 140px;
+      height: 50px;
+      border: none;
+      border-radius: 0;
     }
     }
     .sku-categories{
@@ -276,7 +279,7 @@
     width: 100%;
    @extend %menu;
    .body-tabs{
-    .item{
+    .powerflowers{
       width: 100%;
         padding: 50px 30px;
         display: none;
@@ -293,7 +296,8 @@
             color: $sub-text-color;
             font-size: $sub-title-font-size;
         }
-        .item{
+      }
+    .weight{
           .info{
             p{
               color: #2b2b2b !important;
@@ -311,19 +315,48 @@
         }
         
         }
-
-        .item{
-          .img-comment{
+    .commentrev{
+           .comment{
             position: relative;
-            p{
+            .joshua{
               position: absolute;
-            
-             
+              bottom: 50px;
+              left: 128px;
+              p{
+                color: black !important;
+              }
             }
+            .lorem{    position: absolute;
+              bottom: 0px;
+              left: 128px;
+              color: black;
+            }
+           }
+            
            
           }
 
         }
+        .add-reviews{
+
+          .group-inputs{
+            label{
+              font-family: $primary-fonts;
+              line-height: 1.6em;
+              color: $sub-text-color;
+              $sub-title-font-size:17px;
+            }
+            .btn-pink{
+              color: #fff;
+              background-color: #ff3d2a !important;
+              width: 120px;
+              height: 50px;
+              border: none;
+              border-radius: 0;
+            } 
+          }
+        }  
+       
     }
-   }
-  }
+   
+  

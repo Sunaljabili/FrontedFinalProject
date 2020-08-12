@@ -19,8 +19,8 @@
 
 
 <body>
-      <!-- HEADER START -->
-      <header>
+    <!-- HEADER START -->
+    <header>
         <section id="headernavbar" class="fixed-top">
             <nav class="navbar  navbar-expand-lg navbar-light">
                 <div class="container mt-3">
@@ -57,8 +57,11 @@
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="#">About Us</a>
-                                        <a class="dropdown-item" href="#">FAQ Page</a>
-                                        <a class="dropdown-item" href="#">Contact Us </a>
+                                        <a class="dropdown-item" href="shop-list.html">Shop-List Page </a>
+                                        <a class="dropdown-item" href="progressbar.html">Progressbar Page </a>
+                                        <a class="dropdown-item" href="accordions.html">Accordions Page </a>
+                                        <a class="dropdown-item" href="product-list.html">Product-List Page </a>
+                                        <a class="dropdown-item" href="tabs.html"> Tabs Page </a>
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown shop-items">
@@ -195,9 +198,10 @@
                                         <a class="dropdown-item" href="#">Gallery</a>
                                         <a class="dropdown-item" href="#">Masonry </a>
                                         <div class="layouts">
-                                            <a class="dropdown-item port" href="#">PortFolio Layouts <i class="fas fa-chevron-right fa-sm"></i></a>
-                                            
-                                            
+                                            <a class="dropdown-item port" href="#">PortFolio Layouts <i
+                                                    class="fas fa-chevron-right fa-sm"></i></a>
+
+
                                             </a>
                                             <div class="dropdown-menu portfolioss" aria-labelledby="navbarDropdown">
                                                 <a class="dropdown-item " href="#">Two Columns</a>
@@ -328,31 +332,25 @@
 
         <!-- Orange Amaryllis Start -->
         <section id="orangeamarylills">
-
             <div class="container">
                 <div class="row">
                     <div class="col-lg-2 ">
                         <div class="column">
-                            <img src="img/shop-2-gallery-1-300x400.jpg" data-toggle="modal" data-target="#exampleModal"
-                                onclick="myFunction(this);">
+                            <img src="img/shop-2-gallery-1-300x400.jpg" data-toggle="modal" data-target="#exampleModal">
                         </div>
 
                         <div class="column">
-                            <img src="img/shop-2-gallery-2-300x400.jpg" data-toggle="modal" data-target="#exampleModal"
-                                onclick="myFunction(this);">
+                            <img src="img/shop-2-gallery-2-300x400.jpg" data-toggle="modal" data-target="#exampleModal">
                         </div>
 
 
                         <div class="column">
-                            <img src="img/shop-2-gallery-3-300x400.jpg" data-toggle="modal" data-target="#exampleModal"
-                                onclick="myFunction(this);">
+                            <img src="img/shop-2-gallery-3-300x400.jpg" data-toggle="modal" data-target="#exampleModal">
                         </div>
 
                         <div class="column">
-                            <img src="img/shop-2-gallery-4-300x400.jpg" data-toggle="modal" data-target="#exampleModal"
-                                onclick="myFunction(this);">
+                            <img src="img/shop-2-gallery-4-300x400.jpg" data-toggle="modal" data-target="#exampleModal">
                         </div>
-
                     </div>
                     <div class="col-lg-4">
                         <!-- The expanding image container -->
@@ -440,9 +438,6 @@
                     </div>
                 </div>
             </div>
-
-
-
         </section>
         <!-- Orange Amaryllis End -->
 
@@ -458,7 +453,7 @@
                             <div class="menu-items" data-id="3">REVIEWS(2)</div>
                         </div>
                         <div class="body-tabs">
-                            <div class="item d-block" data-id="1">
+                            <div class="item d-block powerflowers" data-id="1">
                                 <h3>The power of flowers</h3>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
@@ -468,26 +463,41 @@
                                     Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
                                 </p>
                             </div>
-                            <div class="item " data-id="2">
+                            <div class="item  weight" data-id="2">
                                 <div class="info">
                                     <p>Weight: <span>1kq</span></p>
                                     <p>Dimensions <span>30 x 30 x 50 cm</span></p>
                                 </div>
 
                             </div>
-                            <div class="item" data-id="3">
+                            <div class="item commentrev" data-id="3">
 
                                 <h1>Reviews</h1>
-                                <div class="img-comment">
+                                <div class="img">
                                     <img src="img/user-img-1-100x100.png" alt="">
-                                    <p>JOSHUA GARCIA <span>27.04.2018</span></p>
+                                </div>
+                                <div class="comment">
+                                    <p class="joshua">JOSHUA GARCIA <span>27.04.2018</span></p>
                                     <p class="lorem">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
                                         commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et
                                         magnis dis parturient montes, nascetur ridiculus mus.</p>
                                 </div>
-                                <div class="add-reviews">
+                                <div class="img mt-1">
+                                    <img src="img/user-img-2-100x100.png" alt="">
+                                </div>
+                                <div class="comment mt-1">
+                                    <p class="joshua">JOAN STANLEY <span>27.04.2018</span></p>
+                                    <p class="lorem">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus,
+                                        sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc,
+                                        blandit vel, luctus pulvinar, hendrerit</p>
+                                </div>
+
+
+                                <div class="add-reviews mt-3">
                                     <form action="#">
-                                        <div class="form-group">
+                                        <div class="form-group group-inputs">
+                                            <label for="exampleFormControlTextarea1" class="d-block">Your email address
+                                                will not be published. Required fields are marked *</label>
                                             <label for="exampleFormControlTextarea1">Your review *</label>
                                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">
                                             </textarea>
@@ -501,7 +511,7 @@
                                                     Save my name, email, and website in this browser for the next time I
                                                     comment.</label>
                                             </div>
-                                            <button type="button" class="btn btn-danger">Submit</button>
+                                            <button type="button" class="btn btn-danger btn-pink mt-3">Submit</button>
                                         </div>
                                     </form>
                                 </div>
@@ -517,59 +527,61 @@
         <!-- Product List Cards Start -->
         <section id="slickCard">
             <div class="container">
-                <div class="d-flex mt-5">
-                    <div class="col-lg-3 col-md-4 col-sm-12 col-12">
-                        <div class="card">
-                            <img src="img/shop-7-img.jpg" class="card-img-top" alt="...">
-                            <div class="card-body text-center card-text">
-                                <h6>MAJESTY PALM</h6>
-                                <div class="add-to-card txtcard">
-                                    <span>Add to Cart</span>
-                                </div>
-                                <div class="price">
-                                    <span> $259</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12 col-12">
-                        <div class="card">
-                            <img src="img/shop-8-img.jpg" class="card-img-top" alt="...">
-                            <div class="card-body text-center card-text">
-                                <h6>MAJESTY PALM</h6>
-                                <div class="add-to-card txtcard">
-                                    <span>Add to Cart</span>
-                                </div>
-                                <div class="price">
-                                    <span> $259</span>
+                <div class="d-flex ">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="card">
+                                <img src="img/shop-7-img.jpg" class="card-img-top" alt="...">
+                                <div class="card-body text-center card-text">
+                                    <h6>MAJESTY PALM</h6>
+                                    <div class="add-to-card txtcard">
+                                        <span>Add to Cart</span>
+                                    </div>
+                                    <div class="price">
+                                        <span> $259</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12 col-12">
-                        <div class="card">
-                            <img src="img/shop-9-img.jpg" class="card-img-top" alt="...">
-                            <div class="card-body text-center card-text">
-                                <h6>MAJESTY PALM</h6>
-                                <div class="add-to-card txtcard">
-                                    <span>Add to Cart</span>
-                                </div>
-                                <div class="price">
-                                    <span> $259</span>
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="card">
+                                <img src="img/shop-8-img.jpg" class="card-img-top" alt="...">
+                                <div class="card-body text-center card-text">
+                                    <h6>MAJESTY PALM</h6>
+                                    <div class="add-to-card txtcard">
+                                        <span>Add to Cart</span>
+                                    </div>
+                                    <div class="price">
+                                        <span> $259</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12 col-12">
-                        <div class="card">
-                            <img src="img/shop-10-img.jpg" class="card-img-top" alt="...">
-                            <div class="card-body text-center card-text">
-                                <h6>MAJESTY PALM</h6>
-                                <div class="add-to-card txtcard">
-                                    <span>Add to Cart</span>
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="card">
+                                <img src="img/shop-9-img.jpg" class="card-img-top" alt="...">
+                                <div class="card-body text-center card-text">
+                                    <h6>MAJESTY PALM</h6>
+                                    <div class="add-to-card txtcard">
+                                        <span>Add to Cart</span>
+                                    </div>
+                                    <div class="price">
+                                        <span> $259</span>
+                                    </div>
                                 </div>
-                                <div class="price">
-                                    <span> $259</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="card">
+                                <img src="img/shop-10-img.jpg" class="card-img-top" alt="...">
+                                <div class="card-body text-center card-text">
+                                    <h6>MAJESTY PALM</h6>
+                                    <div class="add-to-card txtcard">
+                                        <span>Add to Cart</span>
+                                    </div>
+                                    <div class="price">
+                                        <span> $259</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -580,7 +592,6 @@
         <!-- Product List Cards End -->
 
         <!-- Fiorello Section Start -->
-
         <section id="fiorello">
             <div class="w-100">
                 <div class="d-flex flex-wrap m-0 mt-3">
@@ -589,7 +600,7 @@
                             <h3>#FIORELLO</h3>
                         </div>
                     </div>
-                    <div class="col-lg-12 col-md-12 mt-3 ">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-3  w-100">
                         <div class="autoplayowlcarousel d-flex flex-wrap autoplay">
                             <div class="item">
                                 <img src="img/instagram1.jpg" alt="">
