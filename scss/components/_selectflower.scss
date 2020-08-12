@@ -1,42 +1,55 @@
 #selectflowers{
-
+  
+  #myBtnContainer{
+    &:focus{
+      outline: none;
+      border: none;
+    }
+    button{
+      font-size: 12px;
+    letter-spacing: .1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: $secondary-font;
     
-    // .drpdwn{
-    //     .btnfltr{
-    //         color: black !important;
-    //         margin-left: 150px;
-    //     }
-    //     .drpdwnhover{
-    //         width: 100%;
-    //          position: relative;
-    //         .menudrp{
-    //             width: 100%;
-    //           h6{
-    //               text-align: center;
-    //               font-size: 22px;
-    //               line-height: 1.363em;
-    //               color: #2b2b2b;
-    //               font-family:$playfair-font,serif;
-    //               font-weight: 400;
-    //           }
-    //           a{
-    //             font-size: 13px;
-    //             text-transform: capitalize;
-    //             font-weight: 500;
-    //             color: $sub-text-color;
-    //             font-family: $secondary-font;
+    }
+  }
+    
+    .drpdwn{
+        .btnfltr{
+            color: black !important;
+            margin-left: 150px;
+        }
+        .drpdwnhover{
+            width: 100%;
+             position: relative;
+            .menudrp{
+                width: 100%;
+              h6{
+                  text-align: center;
+                  font-size: 22px;
+                  line-height: 1.363em;
+                  color: #2b2b2b;
+                  font-family:$playfair-font,serif;
+                  font-weight: 400;
+              }
+              a{
+                font-size: 13px;
+                text-transform: capitalize;
+                font-weight: 500;
+                color: $sub-text-color;
+                font-family: $secondary-font;
 
-    //             &:hover{
-    //                 color: black;
-    //             }
-    //           }
-    //         }
-    //     }
+                &:hover{
+                    color: black;
+                }
+              }
+            }
+        }
         
-    // }
+    }
   /* Center website */
   .main {
-    // max-width: 1000px;
     margin: auto;
   }
   
@@ -44,16 +57,7 @@
     font-size: 50px;
     word-break: break-all;
   }
-  
-//   .row {
-//     margin: 8px -16px;
-//   }
-  
-  /* Add padding BETWEEN each column (if you want) */
-//   .row,
-//   .row > .column {
-//     padding: 8px;
-//   }
+
   
   /* Create three equal columns that floats next to each other */
   .column {
@@ -74,8 +78,9 @@
 
           }
       }
-    .content{
+    .content{  
         width: 100%;
+      margin-top: 10px;
        
         .img{
             overflow: hidden;
@@ -136,12 +141,10 @@
     padding: 10px;
   }
   
-  /* The "show" class is added to the filtered elements */
   .show {
     display: block;
   }
   
-  /* Style the buttons */
   .btn {
     border: none;
     outline: none;
@@ -150,13 +153,11 @@
     cursor: pointer;
   }
   
-  /* Add a grey background color on mouse-over */
   .btn:hover {
     color:$primary-color;
     transition: 0.5s;
   }
   
-  /* Add a dark background color to the active button */
   .btn.active {
     background-color:$primary-color;
      color: white;

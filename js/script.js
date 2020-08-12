@@ -239,8 +239,11 @@ var counter = function () {
   var countEl = el.find(".count");
 
   el.find(".minus").click(function () {
-    count = count - 1;
-    countEl.html(count);
+    if(count>0){
+      count = count - 1;
+      countEl.html(count);
+    }
+   
   });
 
   el.find(".plus").click(function () {

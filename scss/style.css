@@ -114,7 +114,7 @@
 .navbar .navbar-nav .icons .fas {
   margin-left: 18px;
   color: #1b2024;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .navbar .navbar-nav .icons .fa-search:hover {
@@ -208,8 +208,8 @@
 .navbar .navbar-nav .nav-item .dropdownmenus .layouts .portfolioss {
   display: none;
   position: absolute;
-  top: 110px !important;
-  left: 210px;
+  top: 121px;
+  left: 206px;
 }
 
 .navbar .navbar-nav .nav-item .dropdownmenus .single .singles {
@@ -275,16 +275,18 @@
 }
 
 .navbar .navbar-nav .shop-items .shop {
-  width: 580px;
-  text-align: center;
+  width: 742px;
+  text-align: right;
+  margin-left: -23px;
 }
 
 .navbar .navbar-nav .shop-items .shop .item {
-  margin-left: 10px;
+  width: 200px;
 }
 
 .navbar .navbar-nav .shop-items .shop .item h5 {
-  margin-right: 10px;
+  margin-right: 40px;
+  text-align: center;
 }
 
 .navbar .navbar-nav .shop-items .shop .item ul {
@@ -301,6 +303,8 @@
   color: #6d6a6a;
   line-height: 30px;
   margin-left: -36px;
+  width: 300px;
+  padding: 8px 0px;
 }
 
 .navbar .navbar-nav .shop-items .shop .item ul li a:hover {
@@ -512,6 +516,7 @@
   width: 100%;
   padding: 50px 0px;
   background-color: #f7f7f7;
+  margin-top: 17px;
 }
 
 #valentine .modalvideo {
@@ -662,15 +667,6 @@
   width: 100%;
   background-attachment: fixed;
   position: relative;
-}
-
-#join::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
 }
 
 #join .input-text h4 {
@@ -864,14 +860,57 @@
 
 #selectflowers {
   /* Center website */
-  /* Add padding BETWEEN each column (if you want) */
   /* Create three equal columns that floats next to each other */
   /* Clear floats after rows */
   /* Content */
-  /* The "show" class is added to the filtered elements */
-  /* Style the buttons */
-  /* Add a grey background color on mouse-over */
-  /* Add a dark background color to the active button */
+}
+
+#selectflowers #myBtnContainer:focus {
+  outline: none;
+  border: none;
+}
+
+#selectflowers #myBtnContainer button {
+  font-size: 12px;
+  letter-spacing: .1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+#selectflowers .drpdwn .btnfltr {
+  color: black !important;
+  margin-left: 150px;
+}
+
+#selectflowers .drpdwn .drpdwnhover {
+  width: 100%;
+  position: relative;
+}
+
+#selectflowers .drpdwn .drpdwnhover .menudrp {
+  width: 100%;
+}
+
+#selectflowers .drpdwn .drpdwnhover .menudrp h6 {
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.363em;
+  color: #2b2b2b;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+#selectflowers .drpdwn .drpdwnhover .menudrp a {
+  font-size: 13px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #8b8b8b;
+  font-family: "Montserrat", sans-serif;
+}
+
+#selectflowers .drpdwn .drpdwnhover .menudrp a:hover {
+  color: black;
 }
 
 #selectflowers .main {
@@ -904,6 +943,7 @@
 
 #selectflowers .column .content {
   width: 100%;
+  margin-top: 10px;
 }
 
 #selectflowers .column .content .img {
@@ -1067,6 +1107,7 @@
   line-height: 1.32em;
   font-family: "Playfair Display";
   font-weight: 400;
+  margin-top: 30px;
 }
 
 .accordionparent .card-body {

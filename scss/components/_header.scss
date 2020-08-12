@@ -10,11 +10,12 @@
     .navbar-nav{
 
         .icons{
-        margin-top: 8px;
+          
+            margin-top: 8px;
              .fas{
                  margin-left: 18px;
                  color: #1b2024;
-                 font-size: 15px;
+                 font-size: 20px;
              }
              .fa-search{
                  &:hover
@@ -29,8 +30,8 @@
                  padding: 6px 6px;
                  border-radius: 50%;
                  font-size: 12px;
-                position: absolute;
-                top: 5px;
+                 position: absolute;
+                 top: 5px;
              }
 
              .text{
@@ -100,8 +101,8 @@
                     .portfolioss{
                         display: none;
                         position: absolute;
-                        top: 110px !important;
-                        left: 210px;
+                        top: 121px;
+                        left: 206px;
                 }
                 }
                 .single{
@@ -173,25 +174,32 @@
         }
         .shop-items{
             .shop{
-                width: 580px;
-                text-align: center;
+                width: 742px;
+                text-align: right;
+                margin-left: -23px;
                 .item{
-                    margin-left: 10px;
+                    // margin-left: 80px;
+                    width: 200px;
                    
                     
                     h5{
-                        margin-right: 10px;
+                        margin-right: 40px;
+                        text-align: center;
                     }
                     ul{
                         list-style: none;
+                       
                         li{
                             text-align: left;
                             margin-right: 20px;
+                            // width: 100%;
                             a{
                                 font-size: 14px;
                                  color: #6d6a6a;
                                  line-height: 30px;
                                  margin-left: -36px;
+                                 width: 300px;
+                                 padding: 8px 0px;
                                 &:hover{
                                     text-decoration: none;
                                 }
