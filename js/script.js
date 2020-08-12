@@ -93,15 +93,6 @@ $(document).ready(function () {
 
   })
 
-  // $(window).scroll(function () {
-  //   var top_of_element = $(".progressbar").offset().top;
-  //   var bottom_of_element = $(".progressbar").offset().top + $(".progressbar").outerHeight();
-  //   var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-  //   var top_of_screen = $(window).scrollTop();
-  //   if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element))
-  //     ProgresBar();
-  // })
-
   function ProgresBar() {
     $('.progressbar').each(function () {
       var t = $(this);
@@ -195,16 +186,6 @@ function w3RemoveClass(element, name) {
 
 // Product-List Page Slider 
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
 // Open the Modal
 function openModal() {
   document.getElementById("myModal").style.display = "block";
@@ -215,30 +196,12 @@ function closeModal() {
   document.getElementById("myModal").style.display = "none";
 }
 
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+if($("#orangeamarylills").length==1){
+  alert("yes")
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
 }
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-// Open the Modal
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
-
-// Close the Modal
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
@@ -264,11 +227,11 @@ function showSlides(n) {
     dots[i].className = dots[i].className.replace("active", "");
   }
   slides[slideIndex-1].style.display = "block";
-  // dots[slideIndex-1].className += "active";
-  // captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
 
+
+// Counter input 
 
 var counter = function () {
   var count = 0;
