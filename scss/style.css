@@ -1911,4 +1911,12 @@
   border: none;
   border-radius: 0;
 }
+
+#basket .table {
+  margin-top: 30px;
+}
+
+#basket .text-danger {
+  margin-top: 30px;
+}
 /*# sourceMappingURL=style.css.map */
